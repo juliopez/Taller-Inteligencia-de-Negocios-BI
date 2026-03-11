@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Curso de Inteligencia de Negocios"
+title: "Taller Inteligencia de Negocios BI"
 message: "If you use this material, please cite this repository."
 type: software
 
@@ -9,7 +9,10 @@ authors:
     affiliation: "Universidad de Konstanz"
     orcid: "https://orcid.org/0000-0002-7920-1563"
 
-repository-code: "https://https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI-"
+doi: 10.5281/zenodo.18967207
+date-released: 2026
+
+repository-code: "https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI"
 
 keywords:
   - Business Intelligence
