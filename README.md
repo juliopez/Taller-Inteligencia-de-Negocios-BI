@@ -8,6 +8,49 @@ Repositorio del curso **Inteligencia de Negocios**, centrado en el desarrollo de
 
 Open Educational Resource (OER) for Business Intelligence courses.
 
+## Estructura del repositorio
+
+- **sesiones/**
+  Presentaciones y materiales de cada sesión del curso.
+
+- **proyecto/**
+  Instrucciones, rúbrica y plantillas para el proyecto aplicado del curso.
+
+- **COURSE_INFO.md**
+  Información general del curso.
+
+- **CITATION.cff**
+  Metadatos para citar este repositorio académico.
+
+## Flujo del curso
+
+```mermaid
+flowchart LR
+
+A[Introducción a BI] --> B[Gestión y almacenamiento de datos]
+
+B --> C[Modelos multidimensionales]
+
+C --> D[Evaluación 1<br>Modelo de datos]
+
+D --> E[ETL básico]
+
+E --> F[ETL avanzado<br>columnas derivadas y carga incremental]
+
+F --> G[Pentaho y automatización]
+
+G --> H[Evaluación 2<br>Procesos ETL]
+
+H --> I[Construcción de cubo OLAP]
+
+I --> J[Evaluación 3<br>Modelo analítico]
+
+J --> K[Visualización con Power BI]
+
+K --> L[Evaluación final<br>Dashboard y análisis]
+
+L --> M[Introducción a minería de datos]
+
 El curso se organiza en torno un proyecto aplicado, cuyo objetivo es construir un sistema de análisis de matrícula escolar mediante técnicas de BI.
 
 ---
