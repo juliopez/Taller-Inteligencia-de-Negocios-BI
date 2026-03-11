@@ -6,6 +6,8 @@
 
 Repositorio del curso **Inteligencia de Negocios**, centrado en el desarrollo de una solución de Business Intelligence utilizando datos abiertos del sistema educativo chileno.
 
+Open Educational Resource (OER) for Business Intelligence courses.
+
 El curso se organiza en torno un proyecto aplicado, cuyo objetivo es construir un sistema de análisis de matrícula escolar mediante técnicas de BI.
 
 ---
