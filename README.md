@@ -27,29 +27,30 @@ Open Educational Resource (OER) for Business Intelligence courses.
 ```mermaid
 flowchart LR
 
-A[Introducción a BI] --> B[Gestión y almacenamiento de datos]
+A[Introduccion a BI] --> B[Gestion y almacenamiento de datos]
 
 B --> C[Modelos multidimensionales]
 
-C --> D[Evaluación 1<br>Modelo de datos]
+C --> D[Evaluacion 1 - Modelo de datos]
 
-D --> E[ETL básico]
+D --> E[ETL basico]
 
-E --> F[ETL avanzado<br>columnas derivadas y carga incremental]
+E --> F[ETL avanzado - columnas derivadas y carga incremental]
 
-F --> G[Pentaho y automatización]
+F --> G[Pentaho y automatizacion]
 
-G --> H[Evaluación 2<br>Procesos ETL]
+G --> H[Evaluacion 2 - Procesos ETL]
 
-H --> I[Construcción de cubo OLAP]
+H --> I[Construccion de cubo OLAP]
 
-I --> J[Evaluación 3<br>Modelo analítico]
+I --> J[Evaluacion 3 - Modelo analitico]
 
-J --> K[Visualización con Power BI]
+J --> K[Visualizacion con Power BI]
 
-K --> L[Evaluación final<br>Dashboard y análisis]
+K --> L[Evaluacion final - Dashboard y analisis]
 
-L --> M[Introducción a minería de datos]
+L --> M[Introduccion a mineria de datos]
+```
 
 El curso se organiza en torno un proyecto aplicado, cuyo objetivo es construir un sistema de análisis de matrícula escolar mediante técnicas de BI.
 
