@@ -1,5 +1,3 @@
-# Semana 5 — Taller Práctico: ETL Intermedio (Columna Derivada) con SSIS
-
 # Semana 5 — Transformación de Datos en ETL (SSIS – Columnas Derivadas)
 
 En esta sesión, los estudiantes avanzarán desde un proceso básico de integración de datos hacia un enfoque completo de ETL, incorporando la etapa de **Transformación**, elemento clave en cualquier solución de Business Intelligence.
