@@ -19,7 +19,7 @@ En las sesiones anteriores:
 
 Sin embargo, ambos enfoques presentan una limitación crítica:
 
-👉 Se procesan todos los datos en cada ejecución  
+> Se procesan todos los datos en cada ejecución  
 
 En entornos reales de Business Intelligence, esto no es viable.
 
@@ -34,7 +34,7 @@ Ejemplo:
 - Ya existen 42 registros en el Data Warehouse  
 - Se agregan nuevos empleados en el sistema transaccional  
 
-👉 ¿Cómo identificamos solo los nuevos registros?
+> ¿Cómo identificamos solo los nuevos registros?
 
 ---
 
