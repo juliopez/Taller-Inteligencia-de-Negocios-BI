@@ -168,17 +168,7 @@ Cada criterio tiene además una **ponderación dentro de la evaluación**.
 ### **Fórmula de cálculo**
 
 El porcentaje de logro final se calcula mediante la siguiente fórmula:  
-$$
-\text{Logro final} =  
-\left(\frac{P_1}{5}\right)\times 15 +  
-\left(\frac{P_2}{5}\right)\times 20 +  
-\left(\frac{P_3}{5}\right)\times 15 +  
-\left(\frac{P_4}{5}\right)\times 10 +  
-\left(\frac{P_5}{5}\right)\times 10 +  
-\left(\frac{P_6}{5}\right)\times 5 +  
-\left(\frac{P_7}{5}\right)\times 10 +  
-\left(\frac{P_8}{5}\right)\times 15  
-$$
+$\text{Logro final} =  \left(\frac{P_1}{5}\right)\times 15 + \left(\frac{P_2}{5}\right)\times 20 + \left(\frac{P_3}{5}\right)\times 15 + \left(\frac{P_4}{5}\right)\times 10 + \left(\frac{P_5}{5}\right)\times 10 + \left(\frac{P_6}{5}\right)\times 5 +  \left(\frac{P_7}{5}\right)\times 10 + \left(\frac{P_8}{5}\right)\times 15$
 
 donde:
 - **P1** = puntaje en *Integración de fuentes de datos*  
@@ -206,6 +196,7 @@ Supongamos el siguiente resultado en la rúbrica:
 | Informe                                            | 5       |
 | Video explicativo y participación del equipo       | 5       |
 | Integridad académica y autoría                     | 5       |
+
 **Ahora se aplica la fórmula:**
 $\left(\frac{4}{5}\right)\times 15 = 12$
 $\left(\frac{5}{5}\right)\times 20 = 20$
@@ -221,26 +212,4 @@ $\text{Logro final} = 12 + 20 + 15 + 8 + 8 + 5 + 10 + 15 = 93\%$
 
 El estudiante obtiene un **93% de logro**.
 
-Luego, este porcentaje se convierte a nota utilizando la **tabla de conversión de porcentaje a nota**  https://escaladenotas.cl/ . Alternativamente, la nota puede calcularse de la siguiente forma:
-
-A partir de los parámetros definidos, la conversión de porcentaje a nota se modela mediante una función lineal por tramos:
-$$n =
-\begin{cases}
-(n_{apr} - n_{min}) \cdot \dfrac{p}{e \cdot p_{max}} + n_{min}, & \text{si } p < e \cdot p_{max} \\\\
-(n_{max} - n_{apr}) \cdot \dfrac{p - e \cdot p_{max}}{p_{max} \cdot (1 - e)} + n_{apr}, & \text{si } p \geq e \cdot p_{max}
-\end{cases}$$
-Donde:
-
-- $n_{max} = 7.0$ (nota máxima)
-- $n_{min} = 1.0$ (nota mínima)
-- $n_{apr} = 4.0$ (nota de aprobación)
-- $e = 0.6$ (exigencia, equivalente al 60%)
-- $p_{max} = 100$ (puntaje máximo)
-- $p$ = porcentaje de logro obtenido
-
-Reemplazando los valores anteriores, la función queda:
-$$n =
-\begin{cases}
-3 \cdot \dfrac{p}{60} + 1, & \text{si } p < 60 \\\\
-3 \cdot \dfrac{p - 60}{40} + 4, & \text{si } p \geq 60
-\end{cases}$$
+Luego, este porcentaje se convierte a nota utilizando la **tabla de conversión de porcentaje a nota**  https://escaladenotas.cl/ . 
