@@ -123,8 +123,8 @@ Una empresa de ventas retail necesita organizar la información asociada a sus c
 Para resolver este problema, la empresa requiere construir una base de datos que permita almacenar de manera estructurada la información de clientes, productos y ventas. Cada cliente puede realizar múltiples compras, mientras que cada venta puede incluir varios productos distintos. A su vez, los productos pueden participar en muchas transacciones diferentes. Este tipo de escenario representa un contexto típico donde el modelamiento relacional permite organizar datos, establecer relaciones entre entidades y mantener consistencia en la información almacenada.
 
 A partir de este caso, se analizarán conceptos fundamentales del modelamiento relacional, incluyendo:
-![[Pasted image 20260521174737.png]]
 
+<img src="MER-Ventas.png" width="800">
 
 
 ## Actividad práctica — Diseño de un Modelo Entidad–Relación (MER)
