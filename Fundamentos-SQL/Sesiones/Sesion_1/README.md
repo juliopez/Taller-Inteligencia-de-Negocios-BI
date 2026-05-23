@@ -154,43 +154,61 @@ El modelo debe permitir posteriormente:
 - mantener integridad y consistencia de los datos.
 
 **Elementos que deben identificarse**
+
 Durante el desarrollo del modelo, cada grupo deberá identificar:
 
-**Entidades**
+1. **Entidades**
+
 Objetos principales del sistema.
+
 Ejemplos:
-- estudiantes;
-- carreras;
-- docentes;
-- asignaturas.
-**Atributos**
+  - estudiantes;
+  - carreras;
+  - docentes;
+  - asignaturas.
+
+2. **Atributos**
+
 Características o propiedades de cada entidad.
+
 Ejemplos:
-- nombre;
-- rut;
-- semestre;
-- nota;
-- créditos.
-**Relaciones**
+  - nombre;
+  - rut;
+  - semestre;
+  - nota;
+  - créditos.
+
+3. **Relaciones**
+
 Conexiones lógicas entre entidades.
+
 Ejemplos:
-- un estudiante se matricula en asignaturas;
-- un docente dicta asignaturas.
-**Cardinalidad**
+  - un estudiante se matricula en asignaturas;
+  - un docente dicta asignaturas.
+
+4. **Cardinalidad**
+
 Cantidad de ocurrencias permitidas entre entidades.
+
 Ejemplos:
-- una carrera tiene muchos estudiantes;
-- una asignatura puede tener muchas matrículas.
-**Claves primarias (PK)**
+  - una carrera tiene muchos estudiantes;
+  - una asignatura puede tener muchas matrículas.
+
+5. **Claves primarias (PK)**
+
 Atributos que identifican de manera única cada registro.
+
 Ejemplo:
-- id_estudiante;
-- id_asignatura.
-**Claves foráneas (FK)**
+  - id_estudiante;
+  - id_asignatura.
+
+5. **Claves foráneas (FK)**
+
 Atributos que permiten relacionar tablas entre sí.
+
 Ejemplo:
-- id_carrera dentro de ESTUDIANTES;
-- id_docente dentro de ASIGNATURAS.
+  - id_carrera dentro de ESTUDIANTES;
+  - id_docente dentro de ASIGNATURAS.
 
 **Tiempo disponible**
 45 minutos.
