@@ -4,6 +4,8 @@
 
 Esta guía tiene como propósito orientar la implementación del modelo académico en Oracle APEX. Este modelo será utilizado durante la Sesión 2 del taller para desarrollar consultas SQL básicas y operaciones de manipulación de datos.
 
+> Si necesita soporte para trabajar en Orcale APEX se recomienda ver el  siguiente video: https://youtu.be/le0TFfD1DtA
+
 ---
 
 ## 1. Objetivo de la actividad
