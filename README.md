@@ -139,16 +139,6 @@ El curso se desarrolla en **15 sesiones**.
 | U3 | Gobierno de datos |
 | U4 | Gestión de proyectos BI |
 
----
-
-# Entregables del proyecto
-
-| Entregable | Contenido |
-|---|---|
-| 1 | Exploración de datos |
-| 2 | Modelo dimensional |
-| 3 | Implementación ETL |
-| 4 | Dashboard final |
 
 ---
 
