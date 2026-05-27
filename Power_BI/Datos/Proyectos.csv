@@ -1,0 +1,11 @@
+ID_Proyecto,Nombre_Proyecto,Tipo_Proyecto,Estado_Proyecto,Monto_Adjudicado,Año_Inicio
+PROY001,IA Aplicada a Educación,FONDECYT,Activo,45000000,2023
+PROY002,Transformación Digital Universitaria,FONDEF,Activo,62000000,2022
+PROY003,Analítica para Gestión Académica,Interno,Finalizado,12000000,2021
+PROY004,Salud Mental Estudiantil,Vinculación,Activo,8000000,2024
+PROY005,Big Data y Retención Estudiantil,FONDECYT,Activo,53000000,2023
+PROY006,Innovación Curricular en Ingeniería,Interno,Finalizado,9500000,2020
+PROY007,Evaluación de Competencias Digitales,FONDEF,Postulado,30000000,2025
+PROY008,Automatización de Procesos Académicos,Interno,Activo,15000000,2024
+PROY009,Visualización de Datos Científicos,FONDECYT,Finalizado,40000000,2021
+PROY010,Gestión Inteligente de Indicadores,Vinculación,Activo,11000000,2025

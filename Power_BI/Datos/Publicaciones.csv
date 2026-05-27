@@ -1,0 +1,101 @@
+﻿ID_Publicacion,Año_Publicacion,Titulo_Publicacion,Tipo_Publicacion,Revista_Evento,Indexacion,ID_Investigador,ID_Proyecto
+PUB001,2023,Analítica predictiva aplicada a la gestión académica universitaria,Ponencia,Congreso Internacional de Innovación Universitaria,Otra,INV001,PROY003
+PUB002,2021,Brechas digitales y acceso equitativo a recursos educativos: desafíos para la gestión universitaria,Artículo,Journal of Educational Data Analytics,WoS,INV001,PROY001
+PUB003,2021,Minería de datos para la caracterización del rendimiento académico,Artículo,Higher Education Policy and Management Review,WoS,INV001,PROY008
+PUB004,2023,Minería de datos para la caracterización del rendimiento académico,Artículo,International Journal of Higher Education Innovation,Scopus,INV001,PROY001
+PUB005,2022,Aprendizaje colaborativo mediado por tecnologías digitales: un estudio de caso institucional,Libro,Editorial Académica Española,Otra,INV001,PROY010
+PUB006,2023,Modelos de alerta temprana para la retención estudiantil,Artículo,Journal of Educational Data Analytics,WoS,INV001,PROY005
+PUB007,2024,Inteligencia artificial generativa y transformación de la educación superior,Ponencia,Seminario Internacional de Gestión de la Educación Superior,Otra,INV001,PROY002
+PUB008,2024,Brechas digitales y acceso equitativo a recursos educativos: aproximaciones metodológicas,Artículo,Journal of Educational Data Analytics,WoS,INV001,PROY002
+PUB009,2025,Inteligencia artificial generativa y transformación de la educación superior,Capítulo de Libro,Editorial Universitaria - Estudios en Educación Superior,Otra,INV001,PROY004
+PUB010,2024,Visualización de indicadores científicos para la toma de decisiones,Artículo,Higher Education Policy and Management Review,WoS,INV001,PROY009
+PUB011,2025,Desarrollo de competencias investigativas en contextos universitarios,Artículo,Revista Latinoamericana de Tecnología Educativa,Scopus,INV001,PROY003
+PUB012,2024,Estrategias de innovación docente basadas en evidencia,Capítulo de Libro,Editorial Universitaria - Estudios en Educación Superior,Otra,INV001,PROY010
+PUB013,2025,Indicadores bibliométricos para el análisis de producción científica,Artículo,Revista Latinoamericana de Tecnología Educativa,Scopus,INV005,PROY009
+PUB014,2025,Factores asociados al bienestar y salud mental estudiantil,Ponencia,Conferencia Latinoamericana de Analítica del Aprendizaje,Otra,INV005,PROY001
+PUB015,2021,Factores asociados al bienestar y salud mental estudiantil,Artículo,Revista Iberoamericana de Educación Superior,Scopus,INV005,PROY002
+PUB016,2023,Evaluación de políticas de aseguramiento de la calidad universitaria,Ponencia,Seminario Internacional de Gestión de la Educación Superior,Otra,INV005,PROY009
+PUB017,2025,Gestión del conocimiento y productividad científica en universidades regionales: aproximaciones metodológicas,Artículo,Revista Latinoamericana de Tecnología Educativa,Scopus,INV005,PROY008
+PUB018,2024,Desarrollo de competencias investigativas en contextos universitarios: un estudio de caso institucional,Artículo,International Journal of Higher Education Innovation,Scopus,INV005,PROY006
+PUB019,2025,Visualización de indicadores científicos para la toma de decisiones: un estudio de caso institucional,Artículo,Revista Iberoamericana de Educación Superior,Scopus,INV005,PROY005
+PUB020,2024,Gobierno de datos y gestión estratégica en instituciones de educación superior,Ponencia,Congreso Internacional de Innovación Universitaria,Otra,INV005,PROY008
+PUB021,2024,Visualización de indicadores científicos para la toma de decisiones,Artículo,Revista Iberoamericana de Educación Superior,Scopus,INV005,PROY010
+PUB022,2024,Visualización de indicadores científicos para la toma de decisiones: un estudio de caso institucional,Artículo,Revista Chilena de Ingeniería,SciELO,INV005,PROY001
+PUB023,2024,Calidad de datos en sistemas de información universitarios,Capítulo de Libro,RIL Editores - Innovación y Gestión Universitaria,Otra,INV005,PROY001
+PUB024,2022,Calidad de datos en sistemas de información universitarios,Ponencia,Seminario Internacional de Gestión de la Educación Superior,Otra,INV010,PROY005
+PUB025,2024,Brechas digitales y acceso equitativo a recursos educativos,Libro,Editorial Académica Española,Otra,INV010,PROY001
+PUB026,2023,Vinculación con el medio y transferencia de conocimiento territorial: aproximaciones metodológicas,Ponencia,Seminario Internacional de Gestión de la Educación Superior,Otra,INV010,PROY003
+PUB027,2021,Diseño de dashboards para el monitoreo de proyectos académicos,Artículo,Higher Education Policy and Management Review,WoS,INV010,PROY010
+PUB028,2022,Brechas digitales y acceso equitativo a recursos educativos,Ponencia,Congreso Internacional de Innovación Universitaria,Otra,INV010,PROY009
+PUB029,2022,Big Data institucional para el seguimiento de trayectorias formativas: desafíos para la gestión universitaria,Ponencia,Latin American Conference on Data Science in Education,Otra,INV010,PROY008
+PUB030,2023,Evaluación de políticas de aseguramiento de la calidad universitaria,Libro,Routledge Higher Education Series,Scopus,INV010,PROY009
+PUB031,2024,Indicadores bibliométricos para el análisis de producción científica,Capítulo de Libro,RIL Editores - Innovación y Gestión Universitaria,Otra,INV010,PROY002
+PUB032,2024,Modelos de alerta temprana para la retención estudiantil: un estudio de caso institucional,Artículo,Higher Education Policy and Management Review,WoS,INV010,PROY003
+PUB033,2023,Inteligencia artificial generativa y transformación de la educación superior: evidencia desde universidades regionales,Artículo,Journal of Educational Data Analytics,WoS,INV012,PROY001
+PUB034,2022,Gestión del conocimiento y productividad científica en universidades regionales,Ponencia,Conferencia Latinoamericana de Analítica del Aprendizaje,Otra,INV012,PROY008
+PUB035,2024,Minería de datos para la caracterización del rendimiento académico,Artículo,Education Sciences and Digital Transformation,WoS,INV012,PROY002
+PUB036,2024,Aprendizaje colaborativo mediado por tecnologías digitales,Artículo,Journal of Educational Data Analytics,WoS,INV012,PROY006
+PUB037,2021,Visualización de indicadores científicos para la toma de decisiones: aproximaciones metodológicas,Capítulo de Libro,Editorial Universitaria - Estudios en Educación Superior,Otra,INV012,PROY003
+PUB038,2024,Brechas digitales y acceso equitativo a recursos educativos,Artículo,Higher Education Policy and Management Review,WoS,INV012,PROY002
+PUB039,2021,Minería de datos para la caracterización del rendimiento académico,Artículo,Education Sciences and Digital Transformation,WoS,INV012,PROY005
+PUB040,2024,Inteligencia artificial generativa y transformación de la educación superior,Ponencia,Congreso Internacional de Innovación Universitaria,Otra,INV012,PROY001
+PUB041,2024,Big Data institucional para el seguimiento de trayectorias formativas,Artículo,Higher Education Policy and Management Review,WoS,INV003,PROY002
+PUB042,2023,Big Data institucional para el seguimiento de trayectorias formativas,Artículo,Revista Iberoamericana de Educación Superior,Scopus,INV003,PROY003
+PUB043,2025,Aprendizaje colaborativo mediado por tecnologías digitales,Artículo,Revista Calidad en la Educación,SciELO,INV003,PROY008
+PUB044,2021,Innovación curricular y competencias digitales en carreras profesionales: un estudio de caso institucional,Capítulo de Libro,Palgrave Handbook of Digital Higher Education,Scopus,INV003,PROY008
+PUB045,2024,Factores asociados al bienestar y salud mental estudiantil: desafíos para la gestión universitaria,Capítulo de Libro,Editorial Universitaria - Estudios en Educación Superior,Otra,INV003,PROY008
+PUB046,2021,Calidad de datos en sistemas de información universitarios: un estudio de caso institucional,Artículo,Revista Iberoamericana de Educación Superior,Scopus,INV003,PROY008
+PUB047,2024,Gobierno de datos y gestión estratégica en instituciones de educación superior: un estudio de caso institucional,Artículo,Higher Education Policy and Management Review,WoS,INV003,PROY008
+PUB048,2024,Aprendizaje colaborativo mediado por tecnologías digitales,Artículo,Journal of Educational Data Analytics,WoS,INV003,PROY007
+PUB049,2023,Evaluación de políticas de aseguramiento de la calidad universitaria,Artículo,Revista Calidad en la Educación,SciELO,INV007,PROY003
+PUB050,2023,Innovación curricular y competencias digitales en carreras profesionales,Artículo,International Journal of Higher Education Innovation,Scopus,INV007,PROY005
+PUB051,2024,Analítica predictiva aplicada a la gestión académica universitaria,Artículo,Journal of Educational Data Analytics,WoS,INV007,PROY001
+PUB052,2021,Calidad de datos en sistemas de información universitarios: aproximaciones metodológicas,Artículo,Higher Education Policy and Management Review,WoS,INV007,PROY003
+PUB053,2024,Big Data institucional para el seguimiento de trayectorias formativas,Artículo,Revista Calidad en la Educación,SciELO,INV007,PROY010
+PUB054,2022,Brechas digitales y acceso equitativo a recursos educativos: evidencia desde universidades regionales,Artículo,Revista Iberoamericana de Educación Superior,Scopus,INV007,PROY003
+PUB055,2025,Brechas digitales y acceso equitativo a recursos educativos: aproximaciones metodológicas,Artículo,Journal of Educational Data Analytics,WoS,INV007,PROY002
+PUB056,2023,Evaluación de políticas de aseguramiento de la calidad universitaria,Capítulo de Libro,RIL Editores - Innovación y Gestión Universitaria,Otra,INV009,PROY006
+PUB057,2023,Inteligencia artificial generativa y transformación de la educación superior: desafíos para la gestión universitaria,Ponencia,Seminario Internacional de Gestión de la Educación Superior,Otra,INV009,PROY001
+PUB058,2023,Innovación curricular y competencias digitales en carreras profesionales,Artículo,Revista Chilena de Ingeniería,SciELO,INV009,PROY002
+PUB059,2024,Brechas digitales y acceso equitativo a recursos educativos,Capítulo de Libro,Palgrave Handbook of Digital Higher Education,Scopus,INV009,PROY001
+PUB060,2023,Innovación curricular y competencias digitales en carreras profesionales,Artículo,Journal of Educational Data Analytics,WoS,INV009,PROY008
+PUB061,2023,Aprendizaje colaborativo mediado por tecnologías digitales: aproximaciones metodológicas,Ponencia,Conferencia Latinoamericana de Analítica del Aprendizaje,Otra,INV009,PROY001
+PUB062,2023,Minería de datos para la caracterización del rendimiento académico,Artículo,Higher Education Policy and Management Review,WoS,INV009,PROY010
+PUB063,2022,Estrategias de innovación docente basadas en evidencia,Ponencia,Congreso Chileno de Investigación Educativa,Otra,INV014,PROY002
+PUB064,2024,Analítica predictiva aplicada a la gestión académica universitaria: aproximaciones metodológicas,Artículo,International Journal of Higher Education Innovation,Scopus,INV014,PROY009
+PUB065,2023,Gestión del conocimiento y productividad científica en universidades regionales: evidencia desde universidades regionales,Capítulo de Libro,Springer Studies in Higher Education Management,Scopus,INV014,PROY001
+PUB066,2024,Evaluación de políticas de aseguramiento de la calidad universitaria,Ponencia,Conferencia Latinoamericana de Analítica del Aprendizaje,Otra,INV014,PROY005
+PUB067,2023,Minería de datos para la caracterización del rendimiento académico: un estudio de caso institucional,Artículo,Higher Education Policy and Management Review,WoS,INV014,PROY004
+PUB068,2024,Gestión del conocimiento y productividad científica en universidades regionales,Artículo,Journal of Educational Data Analytics,WoS,INV014,PROY005
+PUB069,2022,Analítica predictiva aplicada a la gestión académica universitaria: aproximaciones metodológicas,Capítulo de Libro,RIL Editores - Innovación y Gestión Universitaria,Otra,INV002,PROY008
+PUB070,2023,Visualización de indicadores científicos para la toma de decisiones,Artículo,Revista Iberoamericana de Educación Superior,Scopus,INV002,PROY010
+PUB071,2022,Estrategias de innovación docente basadas en evidencia,Artículo,International Journal of Higher Education Innovation,Scopus,INV002,PROY005
+PUB072,2021,Gestión del conocimiento y productividad científica en universidades regionales: desafíos para la gestión universitaria,Ponencia,Conferencia Latinoamericana de Analítica del Aprendizaje,Otra,INV002,PROY007
+PUB073,2025,Desarrollo de competencias investigativas en contextos universitarios,Ponencia,Conferencia Latinoamericana de Analítica del Aprendizaje,Otra,INV002,PROY004
+PUB074,2023,Visualización de indicadores científicos para la toma de decisiones,Ponencia,Seminario Internacional de Gestión de la Educación Superior,Otra,INV002,PROY006
+PUB075,2023,Factores asociados al bienestar y salud mental estudiantil,Artículo,International Journal of Higher Education Innovation,Scopus,INV004,PROY008
+PUB076,2023,Aprendizaje colaborativo mediado por tecnologías digitales,Artículo,Higher Education Policy and Management Review,WoS,INV004,PROY009
+PUB077,2023,Estrategias de innovación docente basadas en evidencia,Capítulo de Libro,Springer Studies in Higher Education Management,Scopus,INV004,PROY008
+PUB078,2024,Transformación digital y automatización de procesos académicos: aproximaciones metodológicas,Artículo,Revista Calidad en la Educación,SciELO,INV004,PROY005
+PUB079,2025,Calidad de datos en sistemas de información universitarios,Artículo,Higher Education Policy and Management Review,WoS,INV004,PROY002
+PUB080,2025,Transformación digital y automatización de procesos académicos,Capítulo de Libro,Editorial Universitaria - Estudios en Educación Superior,Otra,INV004,PROY009
+PUB081,2022,Minería de datos para la caracterización del rendimiento académico,Artículo,Journal of Educational Data Analytics,WoS,INV015,PROY002
+PUB082,2025,Inteligencia artificial generativa y transformación de la educación superior: desafíos para la gestión universitaria,Artículo,Revista Iberoamericana de Educación Superior,Scopus,INV015,PROY010
+PUB083,2024,Aprendizaje colaborativo mediado por tecnologías digitales,Artículo,Education Sciences and Digital Transformation,WoS,INV015,PROY002
+PUB084,2022,Vinculación con el medio y transferencia de conocimiento territorial,Capítulo de Libro,Palgrave Handbook of Digital Higher Education,Scopus,INV015,PROY009
+PUB085,2022,Visualización de indicadores científicos para la toma de decisiones,Capítulo de Libro,Editorial Universitaria - Estudios en Educación Superior,Otra,INV015,PROY002
+PUB086,2022,Inteligencia artificial generativa y transformación de la educación superior,Capítulo de Libro,Palgrave Handbook of Digital Higher Education,Scopus,INV008,PROY005
+PUB087,2024,Calidad de datos en sistemas de información universitarios,Artículo,Education Sciences and Digital Transformation,WoS,INV008,PROY004
+PUB088,2024,Estrategias de innovación docente basadas en evidencia,Libro,Ediciones Universitarias Regionales,Otra,INV008,PROY005
+PUB089,2024,Big Data institucional para el seguimiento de trayectorias formativas,Ponencia,Congreso Chileno de Investigación Educativa,Otra,INV008,PROY005
+PUB090,2024,Gestión del conocimiento y productividad científica en universidades regionales,Artículo,Higher Education Policy and Management Review,WoS,INV008,PROY006
+PUB091,2025,Gestión del conocimiento y productividad científica en universidades regionales,Ponencia,Conferencia Latinoamericana de Analítica del Aprendizaje,Otra,INV006,PROY004
+PUB092,2022,Factores asociados al bienestar y salud mental estudiantil: evidencia desde universidades regionales,Artículo,Revista Calidad en la Educación,SciELO,INV006,PROY002
+PUB093,2021,Innovación curricular y competencias digitales en carreras profesionales,Artículo,International Journal of Higher Education Innovation,Scopus,INV006,PROY005
+PUB094,2021,Brechas digitales y acceso equitativo a recursos educativos,Artículo,Revista Chilena de Ingeniería,SciELO,INV006,PROY002
+PUB095,2021,Diseño de dashboards para el monitoreo de proyectos académicos,Artículo,International Journal of Higher Education Innovation,Scopus,INV013,PROY010
+PUB096,2023,Vinculación con el medio y transferencia de conocimiento territorial: aproximaciones metodológicas,Ponencia,Congreso Chileno de Investigación Educativa,Otra,INV013,PROY010
+PUB097,2024,Brechas digitales y acceso equitativo a recursos educativos,Artículo,International Journal of Higher Education Innovation,Scopus,INV013,PROY009
+PUB098,2021,Minería de datos para la caracterización del rendimiento académico: desafíos para la gestión universitaria,Artículo,Education Sciences and Digital Transformation,WoS,INV011,PROY005
+PUB099,2022,Big Data institucional para el seguimiento de trayectorias formativas,Artículo,International Journal of Higher Education Innovation,Scopus,INV011,PROY009
+PUB100,2025,Gobierno de datos y gestión estratégica en instituciones de educación superior,Ponencia,Congreso Internacional de Innovación Universitaria,Otra,INV011,PROY001

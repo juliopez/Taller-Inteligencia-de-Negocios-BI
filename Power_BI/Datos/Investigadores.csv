@@ -1,0 +1,16 @@
+ID_Investigador,Nombre_Investigador,Departamento,Categoria_Academica,Jornada
+INV001,María González,Ingeniería,Asociado,Completa
+INV002,Carlos Muñoz,Educación,Asistente,Completa
+INV003,Ana Pérez,Ciencias Sociales,Titular,Completa
+INV004,Jorge Rojas,Ciencias de la Salud,Asociado,Media Jornada
+INV005,Patricia Silva,Ingeniería,Titular,Completa
+INV006,Ricardo Torres,Educación,Instructor,Media Jornada
+INV007,Claudia Herrera,Ciencias Sociales,Asociado,Completa
+INV008,Felipe Castro,Ciencias de la Salud,Asistente,Completa
+INV009,Daniela Morales,Ingeniería,Asistente,Completa
+INV010,Sergio Fuentes,Educación,Titular,Completa
+INV011,Verónica Díaz,Ciencias Sociales,Instructor,Media Jornada
+INV012,Mauricio López,Ciencias de la Salud,Asociado,Completa
+INV013,Camila Navarro,Ingeniería,Asistente,Media Jornada
+INV014,Pablo Reyes,Educación,Asociado,Completa
+INV015,Francisca Vega,Ciencias Sociales,Titular,Completa
