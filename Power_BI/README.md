@@ -112,7 +112,7 @@ Entre sus principales capacidades se encuentran:
 
 **Power BI** ofrece dos alternativas de trabajo: en la nube y  en escritorio. En este taller se utilizará **Power BI Desktop**  la versión gratuita de la herramienta, instalada localmente en cada computador.
 
-<img src="IMG-2.png" width="800">
+<img src="Imagenes/IMG-2.png" width="800">
 
 ---
 # 4. Diferencias entre *Excel y Power BI*
@@ -145,7 +145,7 @@ Entre sus principales capacidades se encuentran:
 | Orientado a análisis individuales               | Orientado a análisis integrados           |
 | Menor escalabilidad                             | Mayor capacidad para integrar datos       |
 
-<img src="IMG-3.png" width="800">
+<img src="Imagenes/IMG-3.png" width="800">
 
 ---
 ## 4.1 Ejemplo conceptual
@@ -159,7 +159,7 @@ En *Excel*, si se desea conectar información entre hojas, normalmente se utiliz
 
 En **Power BI**, las tablas se relacionan mediante identificadores comunes, permitiendo que la información “converse” automáticamente.   Esto permite construir visualizaciones integradas sin necesidad de copiar información manualmente entre tablas.
 
-<img src="IMG-4.png" width="800">
+<img src="Imagenes/IMG-4.png" width="800">
 
 ---
 # 5. Caso de estudio del taller
@@ -235,7 +235,7 @@ Esta tabla actúa como punto central del modelo.
 
 Esta es una representación de como se vera nuestro modelo de datos cargado en **Power BI.**
 
-<img src="IMG-5.png" width="800">
+<img src="Imagenes/IMG-5.png" width="800">
 
 Basándonos en este modelo de datos, la lectura correcta seria la siguiente:
 
