@@ -50,12 +50,12 @@ Puedes descargar el instalador como un archivo único directamente a tu equipo. 
 *   **Pasos para instalar:**
     1. Dirígete al **Centro de descarga de Microsoft para Power BI Desktop**. https://www.microsoft.com/es-es/download/details.aspx?id=58494&culture=es-es&country=es
     2. Haz clic en **Descargar** y asegúrate de elegir la **versión de 64 bits** (recomendada).
-       <img src="IMG-7.png" width="400">
+       <img src="Imagenes/IMG-7.png" width="400">
     4. Una vez finalizada la descarga, ejecuta el archivo `.exe` y sigue el asistente de instalación. 
 
 *Nota sobre este método:* A diferencia de la Microsoft Store, la descarga directa requerirá que realices las instalaciones y actualizaciones manualmente. Además, si eliges usar instaladores de línea de comandos, necesitarás privilegios de administrador.
 
-<img src="IMG-6.png" width="400">
+<img src="Imagenes/IMG-6.png" width="400">
 
 ---
 
