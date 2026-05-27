@@ -82,7 +82,7 @@ En este contexto, **Power BI** se ha consolidado como una de las principales her
 
 El presente taller tiene un enfoque principalmente práctico y busca introducir los fundamentos básicos de **Power BI Desktop** utilizando un caso de estudio relacionado con productividad científica universitaria. Durante la sesión, los participantes trabajarán con múltiples tablas conectadas entre sí, construyendo visualizaciones y *dashboards* similares a los utilizados en entornos institucionales reales.
 
-<img src="IMG-1.png" width="800">
+<img src="Imagenes/IMG-1.png" width="800">
 
 
 ---
