@@ -54,7 +54,7 @@ Puedes descargar el instalador como un archivo único directamente a tu equipo. 
 
 *Nota sobre este método:* A diferencia de la Microsoft Store, la descarga directa requerirá que realices las instalaciones y actualizaciones manualmente. Además, si eliges usar instaladores de línea de comandos, necesitarás privilegios de administrador.
 
-![[Pasted image 20260527174544.png|675]]
+<img src="IMG-6.png" width="800">
 
 ---
 
