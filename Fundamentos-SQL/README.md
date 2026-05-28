@@ -30,5 +30,5 @@ El taller posee un enfoque eminentemente práctico, centrado en la resolución d
 - Sesión 1: Modelamiento relacional
 - Sesión 2: SQL básico y CRUD
 - Sesión 3: JOIN y agregaciones
-- Sesión 4: Consultas aplicadas
+- Sesión 4: Consultas aplicadas y Análisis de Datos
 - Sesión 5: Introducción a DW y ecosistemas BI
