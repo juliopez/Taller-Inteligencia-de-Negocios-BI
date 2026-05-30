@@ -1,5 +1,5 @@
 ---
-title: Sesión 4 - Introducción a Business Intelligence
+title: Sesión 5 - Introducción a Business Intelligence
 course: Taller Práctico de Fundamentos de Ingeniería de Datos y SQL
 program: Diplomado en Ingeniería de Datos con Python
 author: Dr. Julio Lopez-Nunez
