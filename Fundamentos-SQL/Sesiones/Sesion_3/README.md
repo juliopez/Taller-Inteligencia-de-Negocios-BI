@@ -179,7 +179,7 @@ INNER JOIN tabla_2
 
 ### 2.2 Explicación de la estructura
 
-**SELECT: ** Indica las columnas que queremos visualizar.
+**SELECT:** Indica las columnas que queremos visualizar.
 
 **FROM:**  Define la tabla principal desde donde comienza la consulta.
 
@@ -995,6 +995,7 @@ Esto facilita:
 Antes de continuar con la actividad práctica, revisa el siguiente resumen visual con algunos de los conceptos más importantes trabajados en esta sesión.
 
 <img src="IMG-9.png" width="800">
+
 # Actividad práctica - Consultas relacionales y agregaciones
 
 ## Contexto
