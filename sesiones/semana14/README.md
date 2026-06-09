@@ -5,6 +5,7 @@
 #### Cuaderno de Ejercicios
 
 ---
+
 # 1. Introducción
 
 En los últimos años, las organizaciones han incrementado significativamente la cantidad de datos disponibles para apoyar procesos de gestión, monitoreo y toma de decisiones. En el contexto universitario, esta información puede encontrarse en ámbitos como:
@@ -41,11 +42,13 @@ En este contexto, **Power BI** se ha consolidado como una de las principales her
 <img src="https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/blob/main/Power_BI/Imagenes/IMG-1.png" width="800">
 
 ---
+
 # 2. Objetivo de la sesión
 
 Comprender los fundamentos básicos de **Power BI Desktop** mediante la construcción guiada de un *dashboard* institucional de productividad científica, utilizando múltiples tablas relacionadas (03) y visualizaciones interactivas.
 
 ---
+
 # 3. ¿Qué es Power BI?
 
 **Power BI** es una herramienta de análisis y visualización de datos desarrollada por *Microsoft* que permite:
@@ -70,6 +73,7 @@ Entre sus principales capacidades se encuentran:
 <img src="https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/blob/main/Power_BI/Imagenes/IMG-2.png" width="800">
 
 ---
+
 # 4. Diferencias entre *Excel y Power BI*
 
 *Excel y Power BI* son herramientas complementarias y ambas cumplen un rol importante en el análisis de datos. Sin embargo, presentan diferencias importantes en la forma de trabajar la información.
@@ -103,6 +107,7 @@ Entre sus principales capacidades se encuentran:
 <img src="https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/blob/main/Power_BI/Imagenes/IMG-3.png" width="800">
 
 ---
+
 ## 4.1 Ejemplo conceptual
 
 En *Excel*, si se desea conectar información entre hojas, normalmente se utilizan:
@@ -117,6 +122,7 @@ En **Power BI**, las tablas se relacionan mediante identificadores comunes, perm
 <img src="https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/blob/main/Power_BI/Imagenes/IMG-4.png" width="800">
 
 ---
+
 # 5. Caso de estudio
 
 Se trabajará con un caso de estudio relacionado con productividad científica universitaria.
@@ -136,6 +142,8 @@ Para ello se utilizarán tres archivos  *CSV*  relacionados entre sí:
 | Publicaciones  | Registro de publicaciones científicas              |
 
 El caso de estudio simula un escenario institucional real donde distintas fuentes de información deben integrarse para apoyar procesos de análisis y toma de decisiones.
+
+> Datos disponibles en: https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/tree/main/Power_BI/Datos
 
 ---
 
@@ -224,7 +232,6 @@ Este enfoque constituye una de las principales bases del trabajo en *Business In
 
 ---
 
----
 # 7. Ejercicios
 ## Ejercicio 1 — Importación y relación de datos
 
@@ -233,11 +240,13 @@ Este enfoque constituye una de las principales bases del trabajo en *Business In
 Comprender cómo **Power BI** permite trabajar con múltiples tablas relacionadas para construir un modelo de datos integrado.
 
 ---
+
 ### Duración estimada
 
 10–12 minutos.
 
 ---
+
 ### Archivos utilizados
 
 - `Investigadores.csv`
@@ -245,6 +254,7 @@ Comprender cómo **Power BI** permite trabajar con múltiples tablas relacionada
 - `Publicaciones.csv`
 
 ---
+
 ### Introducción
 
 En este ejercicio se trabajará con un conjunto de datos relacionados con productividad científica universitaria. La información se encuentra distribuida en múltiples tablas, simulando una situación real de gestión institucional.
@@ -259,6 +269,7 @@ Este enfoque facilita:
 - y construir dashboards más escalables.
 
 ---
+
 ### Parte 1 — Importación de archivos CSV
 
 #### Paso 1
@@ -271,6 +282,7 @@ Abrir Power BI Desktop.
 Seleccionar: $Inicio → Obtener datos → Texto/CSV$
 
 ---
+
 #### Paso 3
 
 Importar los siguientes archivos:
@@ -280,6 +292,7 @@ Importar los siguientes archivos:
 - `Publicaciones.csv`
 
 ---
+
 #### Paso 4
 
 Seleccionar la opción: $Cargar$  para incorporar las tablas al modelo de datos.
@@ -337,6 +350,7 @@ Durante esta actividad se introducen los siguientes conceptos:
 - Foreign Key.
 
 ---
+
 ### Diferencias respecto al trabajo tradicional en Excel
 
 En *Excel*, este tipo de tareas normalmente requiere:
@@ -354,6 +368,7 @@ En **Power BI**:
 - y el modelo queda centralizado.
 
 ---
+
 ### Resultado esperado
 
 Al finalizar el ejercicio, los participantes deberían visualizar:
@@ -363,6 +378,7 @@ Al finalizar el ejercicio, los participantes deberían visualizar:
 - y un modelo de datos funcional listo para construir visualizaciones.
 
 ---
+
 ### Reflexión final del ejercicio
 
 Este ejercicio introduce uno de los conceptos más importantes de **Power BI**:
@@ -378,11 +394,13 @@ Las relaciones permiten que múltiples tablas “conversen” entre sí de maner
 Construir visualizaciones interactivas utilizando información proveniente de múltiples tablas relacionadas.
 
 ---
+
 ### Duración estimada
 
 12–15 minutos.
 
 ---
+
 ### Introducción
 
 Una vez construido el modelo de datos, Power BI permite generar visualizaciones automáticamente utilizando la información conectada entre tablas.
@@ -399,6 +417,7 @@ A diferencia de *Excel*, donde normalmente se requiere:
 En este ejercicio se crearán las primeras visualizaciones de un *dashboard*.
 
 ---
+
 ### Parte 1 — Crear gráfico de publicaciones por año
 
 #### Paso 1
@@ -406,6 +425,7 @@ En este ejercicio se crearán las primeras visualizaciones de un *dashboard*.
 Seleccionar un gráfico de columnas.
 
 ---
+
 #### Paso 2
 
 Incorporar los siguientes campos:
@@ -427,6 +447,7 @@ Visualizar la cantidad de publicaciones por año.
 Insertar un gráfico de barras.
 
 ---
+
 #### Paso 2
 
 Agregar:
@@ -453,6 +474,7 @@ La relación creada en el ejercicio anterior permite combinar automáticamente l
 Insertar un gráfico circular o de barras.
 
 ---
+
 #### Paso 2
 
 Agregar:
@@ -473,6 +495,7 @@ Visualizar la distribución de publicaciones según tipo de indexación:
 - Otra.
 
 ---
+
 ### Parte 4 — Crear indicador KPI
 
 #### Paso 1
@@ -480,6 +503,7 @@ Visualizar la distribución de publicaciones según tipo de indexación:
 Insertar una visualización tipo **Tarjeta**
 
 ---
+
 #### Paso 2
 
 Agregar: $Conteo \ de \ ID-Publicacion$
@@ -491,6 +515,7 @@ Agregar: $Conteo \ de \ ID-Publicacion$
 Visualizar el total general de publicaciones registradas en el sistema.
 
 ---
+
 ### Conceptos principales del ejercicio
 
 Durante esta actividad se introducen los siguientes conceptos:
@@ -511,6 +536,7 @@ Aunque no se explique formalmente, este ejercicio introduce:
 	El análisis se realiza sobre el modelo completo y no sobre hojas aisladas.
 
 ---
+
 #### Diferencias respecto al trabajo tradicional en Excel
 
 En *Excel*, este tipo de análisis normalmente requiere:
@@ -528,6 +554,7 @@ En **Power BI**:
 - y cualquier actualización de datos se refleja dinámicamente.
 
 ---
+
 ### Resultado esperado
 
 Al finalizar el ejercicio, los participantes deberían tener:
@@ -545,6 +572,7 @@ Las visualizaciones deberían mostrar:
 - total de publicaciones.
 
 ---
+
 ### Reflexión final del ejercicio
 
 Este ejercicio introduce una de las principales fortalezas de **Power BI**:
@@ -560,11 +588,13 @@ A diferencia de *Excel*, donde gran parte del trabajo implica preparar manualmen
 Comprender cómo **Power BI** permite crear *dashboards* interactivos mediante filtros y segmentadores que modifican simultáneamente múltiples visualizaciones.
 
 ---
+
 #### Duración estimada
 
 10–12 minutos.
 
 ---
+
 #### Introducción
 
 Uno de los principales diferenciadores de **Power BI** respecto a *Excel* es la capacidad de generar interactividad automática entre gráficos, tablas e indicadores.
@@ -593,6 +623,7 @@ Seleccionar la visualización: $Segmentación \ de \ datos$
 Agregar el campo: $Departamento$
 
 ---
+
 #### Resultado esperado
 
 El usuario podrá filtrar todas las visualizaciones del *dashboard* según departamento académico.
@@ -613,11 +644,13 @@ Por ejemplo:
 Insertar un nuevo segmentador.
 
 ---
+
 #### Paso 2
 
 Agregar el campo: $Indexacion$
 
 ---
+
 #### Resultado esperado
 
 El *dashboard* podrá mostrar únicamente publicaciones:
@@ -628,6 +661,7 @@ El *dashboard* podrá mostrar únicamente publicaciones:
 - u otras categorías.
 
 ---
+
 ### Parte 3 — Crear segmentador por año
 
 #### Paso 1
@@ -635,16 +669,19 @@ El *dashboard* podrá mostrar únicamente publicaciones:
 Agregar un nuevo segmentador.
 
 ---
+
 #### Paso 2
 
 Incorporar: $Año \ Publicacion$
 
 ---
+
 #### Resultado esperado
 
 Los participantes podrán explorar la evolución temporal de la productividad científica.
 
 ---
+
 ### Parte 4 — Explorar interactividad
 
 Interactuar con:
@@ -661,6 +698,7 @@ Observar cómo:
 - y el dashboard responde dinámicamente a las selecciones realizadas.
 
 ---
+
 ### Conceptos principales del ejercicio
 
 Durante esta actividad se introducen los siguientes conceptos:
@@ -682,6 +720,7 @@ Aunque no se expliquen formalmente, este ejercicio introduce:
 	El *dashboard* deja de ser un reporte fijo y se transforma en una herramienta de exploración.
 
 ---
+
 ### Diferencias respecto al trabajo tradicional en *Excel*
 
 En *Excel*, este tipo de interacción normalmente requiere:
@@ -698,6 +737,7 @@ En **Power BI**:
 - y el análisis se vuelve mucho más dinámico.
 
 ---
+
 ### Resultado esperado
 
 Al finalizar el ejercicio, los participantes deberían tener:
@@ -708,6 +748,7 @@ Al finalizar el ejercicio, los participantes deberían tener:
 - y capacidad de explorar información institucional en tiempo real.
 
 ---
+
 ### Reflexión final del ejercicio
 
 Este ejercicio introduce una de las capacidades más potentes de **Power BI**:
@@ -723,11 +764,13 @@ Más que generar gráficos estáticos, **Power BI** permite explorar datos insti
 Integrar visualizaciones, indicadores y filtros en un *dashboard* que permita analizar información de productividad científica de manera clara, interactiva y visual.
 
 ---
+
 ### Duración estimada
 
 10–15 minutos.
 
 ---
+
 ### Introducción
 
 En los ejercicios anteriores se construyó:
@@ -747,6 +790,7 @@ El objetivo no es únicamente construir gráficos, sino transformar datos en inf
 - y comunicación de resultados.
 
 ---
+
 ### Parte 1 — Organización del espacio de trabajo
 
 #### Paso 1
@@ -754,6 +798,7 @@ El objetivo no es únicamente construir gráficos, sino transformar datos en inf
 Reorganizar las visualizaciones construidas previamente dentro de una misma página del informe.
 
 ---
+
 #### Paso 2
 
 Distribuir los elementos considerando:
@@ -765,6 +810,7 @@ Distribuir los elementos considerando:
 - y claridad.
 
 ---
+
 #### Recomendación visual
 
 Se recomienda ubicar:
@@ -777,6 +823,7 @@ Se recomienda ubicar:
 |Rankings y distribución|Parte inferior|
 
 ---
+
 ### Parte 2 — Incorporar título institucional
 
 #### Paso 1
@@ -784,11 +831,13 @@ Se recomienda ubicar:
 Insertar un cuadro de texto.
 
 ---
+
 #### Paso 2
 
 Agregar un título similar a: $Dashboard \ de \ Productividad \ Científica$
 
 ---
+
 #### Paso 3
 
 Opcionalmente incorporar:
@@ -810,6 +859,7 @@ Revisar:
 - y legibilidad de gráficos.
 
 ---
+
 #### Recomendaciones
 
 Evitar:
@@ -825,6 +875,7 @@ Priorizar:
 - lectura rápida.
 
 ---
+
 ### Parte 4 — Validar interactividad
 
 Probar:
@@ -841,6 +892,7 @@ Verificar que:
 - y el dashboard permanezca coherente.
 
 ---
+
 ### Parte 5 — Interpretación del dashboard
 
 Analizar visualmente preguntas como:
@@ -852,6 +904,7 @@ Analizar visualmente preguntas como:
 - ¿Qué proyectos presentan mayor actividad?
 
 ---
+
 ### Conceptos principales del ejercicio
 
 Durante esta actividad se introducen los siguientes conceptos:
@@ -877,6 +930,7 @@ Aunque no se expliquen formalmente, este ejercicio introduce:
 	- y oportunidades de mejora.
 
 ---
+
 ### Diferencias respecto al trabajo tradicional en Excel
 
 En *Excel*, construir un panel similar normalmente requiere:
@@ -894,6 +948,7 @@ En **Power BI**:
 - y el dashboard se actualiza dinámicamente.
 
 ---
+
 ### Resultado esperado
 
 Al finalizar el ejercicio, los participantes deberían tener:
@@ -905,6 +960,7 @@ Al finalizar el ejercicio, los participantes deberían tener:
 - y un entorno visual listo para análisis académico.
 
 ---
+
 ### Reflexión final del ejercicio
 
 Este ejercicio integra los principales conceptos trabajados durante el taller:
