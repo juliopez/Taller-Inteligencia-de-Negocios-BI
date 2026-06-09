@@ -47,6 +47,8 @@ En este contexto, **Power BI** se ha consolidado como una de las principales her
 
 Comprender los fundamentos básicos de **Power BI Desktop** mediante la construcción guiada de un *dashboard* institucional de productividad científica, utilizando múltiples tablas relacionadas (03) y visualizaciones interactivas.
 
+> Guía de Instalación: https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/blob/main/Power_BI/Guia_Instalacion.md
+
 ---
 
 # 3. ¿Qué es Power BI?
