@@ -37,13 +37,11 @@ En este contexto, **Power BI** se ha consolidado como una de las principales her
 - integrar múltiples tablas;
 - y generar informes dinámicos e interactivos.
 
-El presente taller tiene un enfoque principalmente práctico y busca introducir los fundamentos básicos de **Power BI Desktop** utilizando un caso de estudio relacionado con productividad científica universitaria. Durante la sesión, los participantes trabajarán con múltiples tablas conectadas entre sí, construyendo visualizaciones y *dashboards* similares a los utilizados en entornos institucionales reales.
 
-<img src="Imagenes/IMG-1.png" width="800">
-
+<img src="https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/blob/main/Power_BI/Imagenes/IMG-1.png" width="800">
 
 ---
-# 2. Objetivo del taller
+# 2. Objetivo de la sesión
 
 Comprender los fundamentos básicos de **Power BI Desktop** mediante la construcción guiada de un *dashboard* institucional de productividad científica, utilizando múltiples tablas relacionadas (03) y visualizaciones interactivas.
 
@@ -69,7 +67,7 @@ Entre sus principales capacidades se encuentran:
 
 **Power BI** ofrece dos alternativas de trabajo: en la nube y  en escritorio. En este taller se utilizará **Power BI Desktop**  la versión gratuita de la herramienta, instalada localmente en cada computador.
 
-<img src="Imagenes/IMG-2.png" width="800">
+<img src="https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/blob/main/Power_BI/Imagenes/IMG-2.png" width="800">
 
 ---
 # 4. Diferencias entre *Excel y Power BI*
@@ -102,7 +100,7 @@ Entre sus principales capacidades se encuentran:
 | Orientado a análisis individuales               | Orientado a análisis integrados           |
 | Menor escalabilidad                             | Mayor capacidad para integrar datos       |
 
-<img src="Imagenes/IMG-3.png" width="800">
+<img src="https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/blob/main/Power_BI/Imagenes/IMG-3.png" width="800">
 
 ---
 ## 4.1 Ejemplo conceptual
@@ -116,12 +114,12 @@ En *Excel*, si se desea conectar información entre hojas, normalmente se utiliz
 
 En **Power BI**, las tablas se relacionan mediante identificadores comunes, permitiendo que la información “converse” automáticamente.   Esto permite construir visualizaciones integradas sin necesidad de copiar información manualmente entre tablas.
 
-<img src="Imagenes/IMG-4.png" width="800">
+<img src="https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/blob/main/Power_BI/Imagenes/IMG-4.png" width="800">
 
 ---
-# 5. Caso de estudio del taller
+# 5. Caso de estudio
 
-Durante el taller se trabajará con un caso de estudio relacionado con productividad científica universitaria.
+Se trabajará con un caso de estudio relacionado con productividad científica universitaria.
 
 El objetivo será construir un *dashboard* institucional utilizando información asociada a:
 
@@ -192,7 +190,7 @@ Esta tabla actúa como punto central del modelo.
 
 Esta es una representación de como se vera nuestro modelo de datos cargado en **Power BI.**
 
-<img src="Imagenes/IMG-5.png" width="800">
+<img src="https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/blob/main/Power_BI/Imagenes/IMG-5.png" width="800">
 
 Basándonos en este modelo de datos, la lectura correcta seria la siguiente:
 
@@ -923,7 +921,7 @@ Más que reemplazar *Excel*, **Power BI** permite ampliar las capacidades tradic
 
 # 8. Reflexiones finales
 
-Durante el desarrollo del taller se trabajaron algunos de los conceptos fundamentales de **Power BI Desktop** utilizando un caso de estudio basado en productividad científica universitaria.
+Durante el desarrollo de la sesión se trabajaron algunos de los conceptos fundamentales de **Power BI Desktop** utilizando un caso de estudio basado en productividad científica universitaria.
 
 A lo largo de los ejercicios se abordaron aspectos relacionados con:
 
@@ -951,26 +949,5 @@ Mientras *Excel* continúa siendo una herramienta extremadamente útil para:
 El objetivo del taller no fue reemplazar *Excel*, sino mostrar cómo ambas herramientas pueden complementarse dentro de procesos modernos de análisis y gestión institucional.
 
 ---
-
-# 9. Próximos pasos y aplicaciones posibles
-
-Los conceptos trabajados en este taller pueden aplicarse posteriormente a múltiples contextos institucionales, por ejemplo:
-
-- productividad científica;
-- seguimiento de proyectos;
-- indicadores académicos;
-- matrícula;
-- gestión administrativa;
-- análisis financiero;
-- control de gestión;
-- y construcción de reportes ejecutivos.
-
-Entre los próximos pasos recomendados se encuentran:
-
-- importar archivos *Excel* institucionales reales;
-- construir nuevos *dashboards*;
-- incorporar más tablas relacionadas;
-- explorar nuevas visualizaciones;
-- y automatizar procesos de análisis de información.
 
 **Power BI** constituye actualmente una de las principales herramientas utilizadas en entornos de *Business Intelligence* y análisis institucional, permitiendo transformar datos en información visual útil para apoyar procesos de gestión y toma de decisiones.
