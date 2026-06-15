@@ -1017,3 +1017,9 @@ Entre los próximos pasos recomendados se encuentran:
 - y automatizar procesos de análisis de información.
 
 **Power BI** constituye actualmente una de las principales herramientas utilizadas en entornos de *Business Intelligence* y análisis institucional, permitiendo transformar datos en información visual útil para apoyar procesos de gestión y toma de decisiones.
+
+---
+
+Por ultimo, no debemos olvidar que el tipo de visualización que utilizamos depende de lo que queremos demostrar. Para esto, se recomiendo estudiar en profundidad lo expuesto por Abela, A. (2006). ***Chart Suggestions – A Thought-Starter. Extreme Presentation***. https://extremepresentation.com/2006/09/choosing_a_good-1/
+
+<img src="https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/blob/main/Power_BI/Imagenes/IMG-8.jpeg" width="800">
