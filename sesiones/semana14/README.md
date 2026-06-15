@@ -1012,6 +1012,6 @@ El objetivo del taller no fue reemplazar *Excel*, sino mostrar cómo ambas herra
 
 ---
 
-Por ultimo, no debemos olvidar que el tipo de visualización que utilizamos depende de lo que queremos demostrar. Para esto, se recomiendo estudiar en profundidad lo expuesto por Abela, A. (2009). ***Chart Suggestions – A Thought-Starter. Extreme Presentation***. https://extremepresentation.com/2006/09/choosing_a_good-1/
+Por ultimo, no debemos olvidar que el tipo de visualización que utilizamos depende de lo que queremos demostrar. Para esto, se recomiendo estudiar en profundidad lo expuesto por Abela, A. (2006). ***Chart Suggestions – A Thought-Starter. Extreme Presentation***. https://extremepresentation.com/2006/09/choosing_a_good-1/
 
-<IMG src="" width=800>
+<img src="https://github.com/juliopez/Taller-Inteligencia-de-Negocios-BI/blob/main/Power_BI/Imagenes/IMG-8.jpeg" width="800">
