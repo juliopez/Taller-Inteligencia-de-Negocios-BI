@@ -1009,3 +1009,9 @@ El objetivo del taller no fue reemplazar *Excel*, sino mostrar cómo ambas herra
 ---
 
 **Power BI** constituye actualmente una de las principales herramientas utilizadas en entornos de *Business Intelligence* y análisis institucional, permitiendo transformar datos en información visual útil para apoyar procesos de gestión y toma de decisiones.
+
+---
+
+Por ultimo, no debemos olvidar que el tipo de visualización que utilizamos depende de lo que queremos demostrar. Para esto, se recomiendo estudiar en profundidad lo expuesto por Abela, A. (2009). ***Chart Suggestions – A Thought-Starter. Extreme Presentation***. https://extremepresentation.com/2006/09/choosing_a_good-1/
+
+<IMG src="" width=800>
