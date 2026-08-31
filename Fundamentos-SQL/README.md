@@ -184,11 +184,6 @@ Fundamentos-Ingenieria-Datos-SQL/
 │   └── sesion-09/
 │
 ├── scripts/
-│   ├── modelo_operacional/
-│   ├── consultas_sql/
-│   └── data_warehouse/
-│
-├── etl/
 │
 ├── dataset/
 │
