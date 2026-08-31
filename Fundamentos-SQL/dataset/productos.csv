@@ -1,0 +1,61 @@
+﻿id_producto,nombre,categoria,precio,stock
+101,Mouse inalámbrico,Tecnología,35100,36
+102,Teclado mecánico,Tecnología,110500,50
+103,Audífonos Bluetooth,Tecnología,133000,57
+104,Webcam HD,Tecnología,174200,24
+105,Hub USB-C,Tecnología,163700,35
+106,Parlante portátil,Tecnología,150600,27
+107,Cargador rápido,Tecnología,154100,8
+108,Monitor 24 pulgadas,Tecnología,31200,47
+109,Tablet 10 pulgadas,Tecnología,133500,57
+110,SSD externo,Tecnología,137500,36
+111,Lámpara escritorio,Hogar,21800,18
+112,Hervidor eléctrico,Hogar,30400,9
+113,Organizador modular,Hogar,74700,33
+114,Balanza digital,Hogar,17300,63
+115,Set de cocina,Hogar,27800,34
+116,Almohada ergonómica,Hogar,18800,29
+117,Ventilador portátil,Hogar,31700,40
+118,Aspiradora compacta,Hogar,75400,40
+119,Manta térmica,Hogar,28000,70
+120,Cafetera eléctrica,Hogar,31800,73
+121,Mochila urbana,Accesorios,12400,8
+122,Botella térmica,Accesorios,5300,38
+123,Soporte notebook,Accesorios,7100,38
+124,Cable USB-C,Accesorios,3500,60
+125,Funda tablet,Accesorios,13000,45
+126,Power bank,Accesorios,16700,70
+127,Estuche organizador,Accesorios,5300,78
+128,Soporte celular,Accesorios,7500,10
+129,Adaptador multipuerto,Accesorios,29400,5
+130,Bolso deportivo,Accesorios,20400,73
+131,Cuaderno ejecutivo,Oficina,36900,30
+132,Set lápices,Oficina,16800,13
+133,Archivador,Oficina,56000,47
+134,Resma papel,Oficina,32600,20
+135,Calculadora,Oficina,39200,43
+136,Organizador escritorio,Oficina,25200,57
+137,Pizarra magnética,Oficina,14800,42
+138,Carpeta profesional,Oficina,28200,29
+139,Pack destacadores,Oficina,20000,53
+140,Agenda anual,Oficina,36300,27
+141,Banda elástica,Deportes,66200,43
+142,Mat yoga,Deportes,41200,5
+143,Mancuernas 5kg,Deportes,30400,31
+144,Cuerda saltar,Deportes,43800,79
+145,Balón entrenamiento,Deportes,65000,46
+146,Guantes fitness,Deportes,47800,61
+147,Botella deportiva,Deportes,74000,70
+148,Rodillo masaje,Deportes,48800,26
+149,Kit resistencia,Deportes,71800,41
+150,Bolso gimnasio,Deportes,53800,47
+151,Secador cabello,Cuidado Personal,6700,35
+152,Cepillo eléctrico,Cuidado Personal,42700,33
+153,Masajeador facial,Cuidado Personal,53400,23
+154,Cortadora cabello,Cuidado Personal,4400,36
+155,Espejo LED,Cuidado Personal,68600,14
+156,Set manicure,Cuidado Personal,26800,78
+157,Difusor aromas,Cuidado Personal,11200,54
+158,Afeitadora,Cuidado Personal,29500,36
+159,Plancha cabello,Cuidado Personal,9000,5
+160,Balanza personal,Cuidado Personal,60600,18

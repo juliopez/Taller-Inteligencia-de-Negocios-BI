@@ -1,0 +1,121 @@
+﻿id_cliente,nombre,correo,ciudad
+1,José Pérez,jose.perez@example.com,Concepción
+2,Matías Martínez,matias.martinez@example.com,Santiago
+3,José Castillo,jose.castillo@example.com,Santiago
+4,Nicolás Soto,nicolas.soto@example.com,Santiago
+5,Daniela Martínez,daniela.martinez@example.com,Viña del Mar
+6,Ana Castillo,ana.castillo@example.com,Santiago
+7,Tomás Fuentes,tomas.fuentes@example.com,Santiago
+8,Fernanda Sepúlveda,fernanda.sepulveda@example.com,La Serena
+9,Ana Silva,ana.silva@example.com,Concepción
+10,Sofía Sepúlveda,sofia.sepulveda@example.com,Santiago
+11,Sofía Rojas,sofia.rojas@example.com,Santiago
+12,José López,jose.lopez@example.com,La Serena
+13,Rodrigo Sepúlveda,rodrigo.sepulveda@example.com,La Serena
+14,Paula Castillo,paula.castillo@example.com,Santiago
+15,Francisca González,francisca.gonzalez@example.com,Viña del Mar
+16,Rodrigo López,rodrigo.lopez@example.com,Viña del Mar
+17,María Soto,maria.soto@example.com,Concepción
+18,Diego González,diego.gonzalez@example.com,Rancagua
+19,José Torres,jose.torres@example.com,Santiago
+20,Javier Silva,javier.silva@example.com,Valparaíso
+21,Daniela Sepúlveda,daniela.sepulveda@example.com,Concepción
+22,María Vargas,maria.vargas@example.com,Viña del Mar
+23,Tomás Martínez,tomas.martinez@example.com,Santiago
+24,Francisca Sepúlveda,francisca.sepulveda@example.com,Puerto Montt
+25,Tomás Martínez,tomas.martinez2@example.com,Concepción
+26,Carlos Martínez,carlos.martinez@example.com,La Serena
+27,Sofía Torres,sofia.torres@example.com,Santiago
+28,Daniela Reyes,daniela.reyes@example.com,Rancagua
+29,Sofía Contreras,sofia.contreras@example.com,Concepción
+30,Francisca Araya,francisca.araya@example.com,Santiago
+31,Camila Martínez,camila.martinez@example.com,Concepción
+32,Tomás Sepúlveda,tomas.sepulveda@example.com,Concepción
+33,Nicolás Reyes,nicolas.reyes@example.com,Valparaíso
+34,Matías Muñoz,matias.munoz@example.com,Viña del Mar
+35,María Soto,maria.soto2@example.com,Rancagua
+36,Camila Silva,camila.silva@example.com,La Serena
+37,Nicolás Vargas,nicolas.vargas@example.com,Santiago
+38,Francisca Vargas,francisca.vargas@example.com,Puerto Montt
+39,Carolina Sepúlveda,carolina.sepulveda@example.com,Puerto Montt
+40,Ana Rojas,ana.rojas@example.com,Concepción
+41,Tomás Sepúlveda,tomas.sepulveda2@example.com,La Serena
+42,Sofía Rojas,sofia.rojas2@example.com,Santiago
+43,Felipe Araya,felipe.araya@example.com,Santiago
+44,Valentina Espinoza,valentina.espinoza@example.com,La Serena
+45,Carolina Rojas,carolina.rojas@example.com,Rancagua
+46,Diego Espinoza,diego.espinoza@example.com,Viña del Mar
+47,Camila López,camila.lopez@example.com,La Serena
+48,Tomás Espinoza,tomas.espinoza@example.com,Rancagua
+49,Rodrigo Rodríguez,rodrigo.rodriguez@example.com,Viña del Mar
+50,José López,jose.lopez2@example.com,Rancagua
+51,Diego Martínez,diego.martinez@example.com,Santiago
+52,Fernanda González,fernanda.gonzalez@example.com,Santiago
+53,Sebastián González,sebastian.gonzalez@example.com,Puerto Montt
+54,Tomás Muñoz,tomas.munoz@example.com,Santiago
+55,Sebastián Castillo,sebastian.castillo@example.com,Santiago
+56,Carolina Vargas,carolina.vargas@example.com,Valparaíso
+57,Daniela Castillo,daniela.castillo@example.com,Concepción
+58,Daniela Morales,daniela.morales@example.com,Valparaíso
+59,Javier Araya,javier.araya@example.com,Rancagua
+60,Paula Rojas,paula.rojas@example.com,Santiago
+61,María Rodríguez,maria.rodriguez@example.com,Santiago
+62,Tomás Martínez,tomas.martinez3@example.com,Viña del Mar
+63,Ana González,ana.gonzalez@example.com,Concepción
+64,Carlos Martínez,carlos.martinez2@example.com,Santiago
+65,Carlos Rodríguez,carlos.rodriguez@example.com,Santiago
+66,Matías Sepúlveda,matias.sepulveda@example.com,Concepción
+67,Daniela Castillo,daniela.castillo2@example.com,Santiago
+68,Fernanda Reyes,fernanda.reyes@example.com,Valparaíso
+69,Sebastián Fuentes,sebastian.fuentes@example.com,Santiago
+70,José Fuentes,jose.fuentes@example.com,Valparaíso
+71,Nicolás Araya,nicolas.araya@example.com,Rancagua
+72,Carlos Rojas,carlos.rojas@example.com,Santiago
+73,Sofía Rojas,sofia.rojas3@example.com,Santiago
+74,Daniela Castillo,daniela.castillo3@example.com,Valparaíso
+75,Nicolás Silva,nicolas.silva@example.com,Santiago
+76,Matías González,matias.gonzalez@example.com,Valparaíso
+77,Tomás Rojas,tomas.rojas@example.com,Santiago
+78,Tomás Pérez,tomas.perez@example.com,Puerto Montt
+79,Matías Silva,matias.silva@example.com,Valparaíso
+80,Sebastián Contreras,sebastian.contreras@example.com,Rancagua
+81,Carlos Silva,carlos.silva@example.com,Valparaíso
+82,Francisca Sepúlveda,francisca.sepulveda2@example.com,Rancagua
+83,Paula Morales,paula.morales@example.com,Valparaíso
+84,Tomás Navarro,tomas.navarro@example.com,Santiago
+85,Diego Contreras,diego.contreras@example.com,Puerto Montt
+86,Fernanda Castillo,fernanda.castillo@example.com,Santiago
+87,Sofía Soto,sofia.soto@example.com,Santiago
+88,Sebastián Espinoza,sebastian.espinoza@example.com,Rancagua
+89,Carolina Silva,carolina.silva@example.com,Santiago
+90,Carolina González,carolina.gonzalez@example.com,Rancagua
+91,María Vargas,maria.vargas2@example.com,Santiago
+92,Matías Torres,matias.torres@example.com,Santiago
+93,Fernanda Martínez,fernanda.martinez@example.com,Viña del Mar
+94,Carlos Vargas,carlos.vargas@example.com,Santiago
+95,Fernanda Reyes,fernanda.reyes2@example.com,Viña del Mar
+96,Valentina Contreras,valentina.contreras@example.com,Concepción
+97,Sofía Martínez,sofia.martinez@example.com,Santiago
+98,Camila Morales,camila.morales@example.com,Valparaíso
+99,María Pérez,maria.perez@example.com,Valparaíso
+100,Fernanda Rojas,fernanda.rojas@example.com,Santiago
+101,Daniela Espinoza,daniela.espinoza@example.com,Santiago
+102,Javier González,javier.gonzalez@example.com,Rancagua
+103,Javier Morales,javier.morales@example.com,Santiago
+104,Tomás Morales,tomas.morales@example.com,Viña del Mar
+105,Carolina Pérez,carolina.perez@example.com,Concepción
+106,Tomás Morales,tomas.morales2@example.com,Puerto Montt
+107,José Muñoz,jose.munoz@example.com,Santiago
+108,José Castillo,jose.castillo2@example.com,Santiago
+109,Diego Vargas,diego.vargas@example.com,Santiago
+110,Sofía Contreras,sofia.contreras2@example.com,Concepción
+111,Valentina Espinoza,valentina.espinoza2@example.com,Viña del Mar
+112,Carlos González,carlos.gonzalez@example.com,Viña del Mar
+113,Valentina Soto,valentina.soto@example.com,Santiago
+114,Camila Sepúlveda,camila.sepulveda@example.com,Santiago
+115,Paula Castillo,paula.castillo2@example.com,Concepción
+116,Tomás Pérez,tomas.perez2@example.com,Santiago
+117,Camila Castillo,camila.castillo@example.com,Santiago
+118,Javier Reyes,javier.reyes@example.com,Viña del Mar
+119,Nicolás Muñoz,nicolas.munoz@example.com,Santiago
+120,Javier Soto,javier.soto@example.com,Rancagua
