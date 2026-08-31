@@ -1,0 +1,453 @@
+# Sesión 1
+
+# De los datos al modelo relacional
+
+**Asignatura:** Fundamentos de Ingeniería de Datos y SQL
+**Programa:** Diplomado en Ingeniería de Datos con Python
+**Duración:** 3 horas
+**Modalidad:** Online sincrónica
+**Entorno práctico:** Herramienta de diagramación / modelamiento
+**RAA dominante:** RAA1
+
+## Objetivo de aprendizaje
+
+Diseñar un modelo de datos relacional a partir de un problema organizacional, identificando entidades, atributos, claves primarias, claves foráneas, relaciones y cardinalidades.
+
+---
+
+# Descripción de la jornada
+
+Esta primera sesión introduce el rol de la ingeniería de datos y los principios fundamentales del modelamiento relacional.
+
+A partir de un caso organizacional, los estudiantes analizarán cómo una situación del mundo real puede representarse mediante entidades, atributos y relaciones, comprendiendo la función de las claves primarias y foráneas y la importancia de la integridad referencial.
+
+La jornada tendrá un enfoque predominantemente práctico. Luego de una breve exposición conceptual, los estudiantes deberán diseñar un modelo relacional que posteriormente será implementado en Oracle APEX durante la Sesión 2.
+
+---
+
+# Agenda de la jornada
+
+| Bloque                    |      Tiempo | Actividad                                                        |
+| ------------------------- | ----------: | ---------------------------------------------------------------- |
+| Exposición y demostración |  **45 min** | Ingeniería de datos y fundamentos del modelamiento relacional    |
+| Break                     |  **15 min** | Descanso                                                         |
+| Taller práctico           | **120 min** | Diseño progresivo de un modelo relacional                        |
+| Cierre                    |  **15 min** | Revisión de soluciones, errores frecuentes y preparación para S2 |
+
+Esta estructura la mantendremos como patrón para las nueve sesiones.
+
+---
+
+# Bloque 1 — Exposición y demostración
+
+## 19:15–20:00
+
+### 1. ¿Dónde comienza la ingeniería de datos?
+
+Las organizaciones generan datos permanentemente mediante ventas, clientes, transacciones, aplicaciones, sensores y múltiples sistemas de información.
+
+Sin embargo, disponer de datos no significa disponer de información útil.
+
+Antes de consultar, transformar o analizar datos es necesario determinar **cómo serán estructurados y relacionados**.
+
+Un flujo simplificado puede representarse como:
+
+**Problema → Datos → Modelo → Base de datos → SQL → Análisis**
+
+El modelamiento constituye, por tanto, uno de los primeros pasos para construir soluciones confiables de ingeniería de datos.
+
+### 2. Del mundo real al modelo de datos
+
+Una organización no comienza pensando en tablas.
+
+Comienza con conceptos del mundo real:
+
+**Cliente — Producto — Venta — Pedido — Proveedor**
+
+El modelamiento permite representar esos conceptos mediante estructuras que posteriormente podrán implementarse en una base de datos.
+
+Presentar aquí la transformación:
+
+**Objeto del mundo real → Entidad → Tabla**
+
+**Característica → Atributo → Columna**
+
+**Ocurrencia → Registro → Fila**
+
+Este será un punto conceptual importante de la sesión.
+
+---
+
+# 3. Entidades y atributos
+
+Una **entidad** representa un objeto o concepto relevante para el sistema.
+
+Por ejemplo:
+
+**CLIENTE**
+
+puede contener atributos como:
+
+* identificador;
+* nombre;
+* correo;
+* ciudad;
+* fecha de registro.
+
+Mientras que:
+
+**PRODUCTO**
+
+podría contener:
+
+* identificador;
+* nombre;
+* categoría;
+* precio;
+* stock.
+
+Aquí conviene mostrar deliberadamente ejemplos correctos e incorrectos para que los estudiantes comiencen a distinguir entre **entidad, atributo y dato**.
+
+---
+
+# 4. Claves primarias
+
+Cada registro necesita ser identificado inequívocamente.
+
+Por ejemplo:
+
+```text
+CLIENTES
+------------------------
+id_cliente      PK
+nombre
+correo
+ciudad
+```
+
+La clave primaria:
+
+* identifica un registro;
+* no debe repetirse;
+* permite posteriormente establecer relaciones.
+
+Pregunta para la clase:
+
+> ¿Por qué sería problemático utilizar el nombre del cliente como clave primaria?
+
+---
+
+# 5. Relaciones y claves foráneas
+
+Los datos adquieren mayor valor cuando pueden relacionarse.
+
+Por ejemplo:
+
+```text
+CLIENTES
+id_cliente PK
+     │
+     │
+     ▼
+VENTAS
+id_venta PK
+id_cliente FK
+```
+
+`id_cliente` permite establecer qué cliente realizó cada venta.
+
+Introducir aquí la diferencia:
+
+**PK → identifica.**
+
+**FK → relaciona.**
+
+---
+
+# 6. Cardinalidad
+
+Explicar solamente las relaciones necesarias para esta etapa:
+
+**1 : 1**
+
+**1 : N**
+
+**N : M**
+
+Utilizar ejemplos de negocio.
+
+### Cliente — Venta
+
+```text
+CLIENTE 1 ───── N VENTAS
+```
+
+Un cliente puede realizar muchas ventas.
+
+Cada venta corresponde a un cliente.
+
+### Venta — Producto
+
+Aquí aparece deliberadamente un problema:
+
+```text
+VENTAS N ───── N PRODUCTOS
+```
+
+Una venta puede contener varios productos y un producto puede aparecer en muchas ventas.
+
+**¿Cómo representamos una relación N:M en una base de datos relacional?**
+
+Esta pregunta será el puente hacia la actividad práctica.
+
+---
+
+# Break
+
+## 20:00–20:15
+
+---
+
+# Taller práctico
+
+## 20:15–22:15
+
+Aquí cambiaría bastante la actividad anterior.
+
+No entregaría inmediatamente las entidades. El objetivo ahora será que los estudiantes **descubran el modelo desde un requerimiento de negocio**.
+
+## Caso práctico — Sistema de gestión comercial
+
+Una empresa comercializa productos a diferentes clientes y necesita organizar la información generada por sus operaciones.
+
+Actualmente mantiene información de clientes, productos y ventas en diferentes archivos, dificultando conocer qué productos fueron adquiridos en cada transacción y quién realizó cada compra.
+
+La empresa requiere diseñar una base de datos que permita registrar sus operaciones y posteriormente responder preguntas como:
+
+* ¿qué productos compró cada cliente?;
+* ¿cuántas ventas realizó cada cliente?;
+* ¿qué productos presentan mayor demanda?;
+* ¿cuánto dinero genera cada venta?;
+* ¿qué productos se venden con mayor frecuencia?
+
+Antes de implementar la base de datos, el equipo debe construir su modelo relacional.
+
+---
+
+# Etapa 1 — Identificar entidades
+
+### 20 minutos
+
+A partir del caso, identificar los principales objetos sobre los cuales necesitamos almacenar información.
+
+No entregar inicialmente la solución.
+
+Los estudiantes deberían llegar progresivamente a conceptos como:
+
+```text
+CLIENTES
+PRODUCTOS
+VENTAS
+```
+
+Entonces aparece la pregunta:
+
+**¿Son suficientes estas tres entidades?**
+
+---
+
+# Etapa 2 — Resolver la relación Venta–Producto
+
+### 25 minutos
+
+Analizar:
+
+> Una venta puede contener muchos productos y un producto puede aparecer en muchas ventas.
+
+Los estudiantes deberán detectar la relación:
+
+```text
+VENTAS N ───── N PRODUCTOS
+```
+
+y proponer una solución.
+
+Introducir entonces:
+
+```text
+VENTAS
+   1
+   │
+   N
+DETALLE_VENTAS
+   N
+   │
+   1
+PRODUCTOS
+```
+
+Esta tabla asociativa permitirá posteriormente introducir conceptos muy importantes como:
+
+* cantidad;
+* precio de venta;
+* subtotal.
+
+---
+
+# Etapa 3 — Definir atributos
+
+### 25 minutos
+
+Cada grupo deberá proponer los atributos necesarios.
+
+Por ejemplo:
+
+```text
+CLIENTES
+id_cliente
+nombre
+correo
+ciudad
+
+PRODUCTOS
+id_producto
+nombre
+categoria
+precio
+stock
+
+VENTAS
+id_venta
+id_cliente
+fecha_venta
+
+DETALLE_VENTAS
+id_detalle
+id_venta
+id_producto
+cantidad
+precio_unitario
+```
+
+Aquí el docente interviene principalmente mediante preguntas, no entregando inmediatamente la solución.
+
+---
+
+# Etapa 4 — Identificar PK y FK
+
+### 20 minutos
+
+Los estudiantes deberán marcar:
+
+**PK**
+
+* `id_cliente`
+* `id_producto`
+* `id_venta`
+* `id_detalle`
+
+**FK**
+
+* `VENTAS.id_cliente`
+* `DETALLE_VENTAS.id_venta`
+* `DETALLE_VENTAS.id_producto`
+
+---
+
+# Etapa 5 — Definir cardinalidades
+
+### 15 minutos
+
+El modelo esperado deberá expresar:
+
+```text
+CLIENTES  1 ───── N  VENTAS
+
+VENTAS    1 ───── N  DETALLE_VENTAS
+
+PRODUCTOS 1 ───── N  DETALLE_VENTAS
+```
+
+Aquí debemos detenernos especialmente en la última relación, porque es una excelente oportunidad para comprobar que comprendieron correctamente **desde qué entidad se está leyendo la cardinalidad**.
+
+---
+
+# Etapa 6 — Desafío de validación
+
+### 15 minutos
+
+Cada grupo deberá comprobar si su modelo puede responder:
+
+1. ¿Quién realizó una determinada venta?
+2. ¿Qué productos contiene una venta?
+3. ¿En cuántas ventas aparece determinado producto?
+4. ¿Cuántas unidades de un producto se vendieron?
+5. ¿Cuánto dinero representa cada línea de venta?
+
+Si el modelo no permite responder alguna pregunta, deberá ser revisado.
+
+Esta etapa me parece especialmente importante porque introduce una idea que utilizaremos durante todo el curso:
+
+> **Un modelo de datos no se evalúa solamente por su apariencia; debe permitir responder los requerimientos del negocio.**
+
+---
+
+# Resultado esperado
+
+Al finalizar la actividad, cada estudiante o grupo deberá disponer de:
+
+* identificación de las cuatro entidades;
+* atributos de cada entidad;
+* claves primarias;
+* claves foráneas;
+* relaciones;
+* cardinalidades;
+* diagrama relacional completo.
+
+El producto esperado será aproximadamente:
+
+```text
+CLIENTES
+   1
+   │
+   N
+VENTAS
+   1
+   │
+   N
+DETALLE_VENTAS
+   N
+   │
+   1
+PRODUCTOS
+```
+
+---
+
+# Cierre de la sesión
+
+## 22:15–22:30
+
+Revisar colectivamente:
+
+* diferencias entre entidad y atributo;
+* función de PK y FK;
+* interpretación de cardinalidades;
+* resolución de relaciones N:M;
+* errores detectados durante el taller.
+
+## Conexión con la Sesión 2
+
+**Hoy diseñamos el modelo. En la próxima sesión lo convertiremos en una base de datos real.**
+
+En la **Sesión 2**, implementarán este modelo en Oracle APEX mediante:
+
+```text
+CREATE TABLE
+PRIMARY KEY
+FOREIGN KEY
+NOT NULL
+Tipos de datos
+```
+
+---
