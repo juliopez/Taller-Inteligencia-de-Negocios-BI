@@ -212,10 +212,6 @@ Esta pregunta será el puente hacia la actividad práctica.
 
 ## 20:15–22:15
 
-Aquí cambiaría bastante la actividad anterior.
-
-No entregaría inmediatamente las entidades. El objetivo ahora será que los estudiantes **descubran el modelo desde un requerimiento de negocio**.
-
 ## Caso práctico — Sistema de gestión comercial
 
 Una empresa comercializa productos a diferentes clientes y necesita organizar la información generada por sus operaciones.
@@ -240,20 +236,6 @@ Antes de implementar la base de datos, el equipo debe construir su modelo relaci
 
 A partir del caso, identificar los principales objetos sobre los cuales necesitamos almacenar información.
 
-No entregar inicialmente la solución.
-
-Los estudiantes deberían llegar progresivamente a conceptos como:
-
-```text
-CLIENTES
-PRODUCTOS
-VENTAS
-```
-
-Entonces aparece la pregunta:
-
-**¿Son suficientes estas tres entidades?**
-
 ---
 
 # Etapa 2 — Resolver la relación Venta–Producto
@@ -264,34 +246,6 @@ Analizar:
 
 > Una venta puede contener muchos productos y un producto puede aparecer en muchas ventas.
 
-Los estudiantes deberán detectar la relación:
-
-```text
-VENTAS N ───── N PRODUCTOS
-```
-
-y proponer una solución.
-
-Introducir entonces:
-
-```text
-VENTAS
-   1
-   │
-   N
-DETALLE_VENTAS
-   N
-   │
-   1
-PRODUCTOS
-```
-
-Esta tabla asociativa permitirá posteriormente introducir conceptos muy importantes como:
-
-* cantidad;
-* precio de venta;
-* subtotal.
-
 ---
 
 # Etapa 3 — Definir atributos
@@ -300,75 +254,17 @@ Esta tabla asociativa permitirá posteriormente introducir conceptos muy importa
 
 Cada grupo deberá proponer los atributos necesarios.
 
-Por ejemplo:
-
-```text
-CLIENTES
-id_cliente
-nombre
-correo
-ciudad
-
-PRODUCTOS
-id_producto
-nombre
-categoria
-precio
-stock
-
-VENTAS
-id_venta
-id_cliente
-fecha_venta
-
-DETALLE_VENTAS
-id_detalle
-id_venta
-id_producto
-cantidad
-precio_unitario
-```
-
-Aquí el docente interviene principalmente mediante preguntas, no entregando inmediatamente la solución.
-
 ---
 
 # Etapa 4 — Identificar PK y FK
 
 ### 20 minutos
 
-Los estudiantes deberán marcar:
-
-**PK**
-
-* `id_cliente`
-* `id_producto`
-* `id_venta`
-* `id_detalle`
-
-**FK**
-
-* `VENTAS.id_cliente`
-* `DETALLE_VENTAS.id_venta`
-* `DETALLE_VENTAS.id_producto`
-
 ---
 
 # Etapa 5 — Definir cardinalidades
 
 ### 15 minutos
-
-El modelo esperado deberá expresar:
-
-```text
-CLIENTES  1 ───── N  VENTAS
-
-VENTAS    1 ───── N  DETALLE_VENTAS
-
-PRODUCTOS 1 ───── N  DETALLE_VENTAS
-```
-
-Aquí debemos detenernos especialmente en la última relación, porque es una excelente oportunidad para comprobar que comprendieron correctamente **desde qué entidad se está leyendo la cardinalidad**.
 
 ---
 
@@ -385,10 +281,6 @@ Cada grupo deberá comprobar si su modelo puede responder:
 5. ¿Cuánto dinero representa cada línea de venta?
 
 Si el modelo no permite responder alguna pregunta, deberá ser revisado.
-
-Esta etapa me parece especialmente importante porque introduce una idea que utilizaremos durante todo el curso:
-
-> **Un modelo de datos no se evalúa solamente por su apariencia; debe permitir responder los requerimientos del negocio.**
 
 ---
 
@@ -427,8 +319,6 @@ PRODUCTOS
 # Cierre de la sesión
 
 ## 22:15–22:30
-
-Revisar colectivamente:
 
 * diferencias entre entidad y atributo;
 * función de PK y FK;
