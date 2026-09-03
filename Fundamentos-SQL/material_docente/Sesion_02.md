@@ -74,8 +74,6 @@ El siguiente paso consiste en traducir:
 
 # 2. ¿Qué es DDL?
 
-Introducir una distinción que será importante durante las siguientes sesiones.
-
 SQL no es solamente un lenguaje para consultar datos.
 
 Existen diferentes familias de instrucciones.
@@ -104,20 +102,7 @@ La manipulación y consulta de datos se profundizará en la Sesión 3.
 
 # 3. Conociendo Oracle APEX
 
-Realizar una demostración breve del entorno.
-
-Recorrido:
-
-```text
-Oracle APEX
-    ↓
-SQL Workshop
-    ├── Object Browser
-    ├── SQL Commands
-    └── SQL Scripts
-```
-
-Explicar para qué utilizaremos cada componente.
+https://youtu.be/le0TFfD1DtA
 
 ### SQL Scripts
 
@@ -137,8 +122,6 @@ No dedicar demasiado tiempo a la interfaz. El objetivo es que Oracle APEX sea **
 
 # 4. CREATE TABLE
 
-Partir con una tabla sencilla.
-
 ```sql
 CREATE TABLE clientes (
     id_cliente NUMBER,
@@ -148,7 +131,6 @@ CREATE TABLE clientes (
 );
 ```
 
-Explicar qué está ocurriendo:
 
 ```text
 clientes        → tabla
@@ -161,7 +143,6 @@ VARCHAR2(100)   → tipo y longitud
 
 # 5. Tipos de datos
 
-Trabajar solamente con los tipos necesarios para el curso.
 
 | Tipo          | Uso     |
 | ------------- | ------- |
@@ -183,13 +164,9 @@ nombre VARCHAR2(100)
 fecha_venta DATE
 ```
 
-La idea no es convertir esta parte en una clase exhaustiva sobre tipos Oracle.
-
 ---
 
 # 6. PRIMARY KEY
-
-Modificar conceptualmente la tabla anterior:
 
 ```sql
 CREATE TABLE clientes (
@@ -200,17 +177,13 @@ CREATE TABLE clientes (
 );
 ```
 
-Preguntar:
-
 > ¿Qué ocurriría si intentamos ingresar dos clientes con el mismo `id_cliente`?
-
-Aquí conectamos directamente con lo aprendido en S1.
 
 ---
 
 # 7. FOREIGN KEY
 
-Ahora introducir `VENTAS`.
+Ahora vamos a introducir `VENTAS`.
 
 ```sql
 CREATE TABLE ventas (
@@ -237,15 +210,9 @@ id_venta   PK
 id_cliente FK
 ```
 
-Este es probablemente **el concepto central de los 45 minutos**.
-
-El estudiante debe comprender que la relación que dibujó en S1 ahora existe realmente dentro del motor de base de datos.
-
 ---
 
 # 8. Integridad referencial
-
-Realizar una pequeña demostración.
 
 Supongamos que no existe el cliente 99:
 
@@ -258,15 +225,11 @@ VALUES
 
 La operación debería ser rechazada.
 
-Preguntar:
-
 > ¿Es esto un problema de Oracle o es precisamente lo que queremos que ocurra?
 
 La respuesta:
 
 **La base de datos está protegiendo la consistencia del modelo.**
-
-Aquí podemos introducir formalmente el concepto de **integridad referencial**.
 
 ---
 
@@ -327,15 +290,6 @@ Los estudiantes deberán determinar:
 * PK;
 * campos obligatorios.
 
-Después ejecutar:
-
-```sql
-SELECT *
-FROM clientes;
-```
-
-Aunque no existan datos todavía, la consulta permitirá comprobar que la tabla existe.
-
 ---
 
 # Etapa 3 — Crear PRODUCTOS
@@ -354,25 +308,11 @@ precio
 stock
 ```
 
-Nuevamente deberán determinar:
-
-* tipos;
-* PK;
-* restricciones apropiadas.
-
 ---
 
 # Etapa 4 — Crear VENTAS
 
 ### 20 minutos
-
-Ahora aparece la primera relación.
-
-```text
-CLIENTES 1 ───── N VENTAS
-```
-
-La tabla deberá considerar:
 
 ```text
 VENTAS
@@ -382,25 +322,11 @@ id_cliente
 fecha_venta
 ```
 
-Los estudiantes deberán implementar:
-
-```text
-id_cliente → FK
-```
-
-referenciando:
-
-```text
-CLIENTES.id_cliente
-```
-
 ---
 
 # Etapa 5 — Crear DETALLE_VENTAS
 
 ### 20 minutos
-
-Esta será la tabla más importante de la práctica.
 
 ```text
 DETALLE_VENTAS
@@ -468,17 +394,11 @@ Comprobar:
 * PK;
 * FK.
 
-Aquí cada estudiante debe comparar el modelo implementado con el diagrama diseñado en S1.
-
 ---
 
 # Etapa 7 — Primera carga de datos
 
 ### 20 minutos
-
-Ahora recuperamos parte del `INSERT` que antes aparecía inmediatamente junto a todo el CRUD en la antigua S2. 
-
-Cargar un conjunto pequeño de información:
 
 ### CLIENTES
 
@@ -496,40 +416,11 @@ Cargar un conjunto pequeño de información:
 
 al menos 6 registros.
 
-Pero hay una condición:
-
-> **No entregar inmediatamente el orden de inserción.**
-
-Los estudiantes deberán descubrir que no pueden comenzar por `DETALLE_VENTAS`.
-
-El orden correcto emerge de las dependencias:
-
-```text
-CLIENTES ─┐
-          ├──→ VENTAS ───→ DETALLE_VENTAS
-PRODUCTOS ┘
-```
-
-Más exactamente:
-
-```text
-CLIENTES
-PRODUCTOS
-    ↓
-VENTAS
-    ↓
-DETALLE_VENTAS
-```
-
-Esto permite experimentar realmente la integridad referencial, algo que en el solucionario anterior simplemente se advertía mediante notas como "los valores deben existir previamente". 
-
 ---
 
 # Etapa 8 — Provocar un error
 
 ### 10 minutos
-
-Esta actividad la incorporaría deliberadamente.
 
 Cada estudiante deberá intentar insertar un detalle con un producto inexistente.
 
@@ -547,14 +438,6 @@ Observar el error.
 Luego responder:
 
 **¿Por qué Oracle rechazó el registro?**
-
-La respuesta deberá relacionarse con:
-
-* FK;
-* integridad referencial;
-* consistencia de datos.
-
-Así el error se transforma en recurso pedagógico.
 
 ---
 
