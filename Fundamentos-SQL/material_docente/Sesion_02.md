@@ -43,14 +43,8 @@ La actividad permitirá comprobar que un modelo relacional no consiste solamente
 
 ## 1. Del modelo a la implementación
 
-Retomar el resultado de la Sesión 1:
+<img src="../image/IMG_01.png" width="800">
 
-```text
-CLIENTES  1 ───── N  VENTAS
-
-VENTAS    1 ───── N  DETALLE_VENTAS
-
-PRODUCTOS 1 ───── N  DETALLE_VENTAS
 ```
 
 Hasta ahora tenemos una **representación del problema**.
