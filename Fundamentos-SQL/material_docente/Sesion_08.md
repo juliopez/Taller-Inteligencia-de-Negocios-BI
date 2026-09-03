@@ -2,11 +2,10 @@
 
 # ETL y construcción del Data Warehouse
 
-**Asignatura:** Fundamentos de Ingeniería de Datos y SQL
-**Duración:** 3 horas
-**Modalidad:** Online sincrónica
-**Entorno práctico:** SQL Server + Visual Studio / SQL Server Integration Services (SSIS)
-**RAA dominante:** RAA3
+**Asignatura:** Fundamentos de Ingeniería de Datos y SQL<br>
+**Duración:** 3 horas<br>
+**Modalidad:** Online sincrónica<br>
+**Entorno práctico:** SQL Server + Visual Studio / SQL Server Integration Services (SSIS)<br>
 
 ## Objetivo de aprendizaje
 
@@ -37,8 +36,6 @@ El objetivo no será profundizar en administración de SSIS ni en automatizació
 
 ## 1. Tenemos dos modelos, pero falta algo
 
-Comenzaría exactamente desde donde terminamos S7:
-
 ```text
 BASE OPERACIONAL                       DATA WAREHOUSE
 
@@ -47,8 +44,6 @@ PRODUCTOS                              DIM_PRODUCTO
 VENTAS                ???              DIM_TIEMPO
 DETALLE_VENTAS                         FACT_VENTAS
 ```
-
-La pregunta:
 
 > **¿Cómo llegan los datos desde el sistema operacional hasta el Data Warehouse?**
 
@@ -60,13 +55,9 @@ Necesitamos un proceso capaz de:
 2. prepararlos;
 3. cargarlos.
 
-Ahí introducimos ETL.
-
 ---
 
 # 2. ETL
-
-La antigua versión utilizaba la definición clásica: **Extract, Transform, Load**. 
 
 Ahora la conectamos directamente con nuestro caso:
 
@@ -172,11 +163,7 @@ Otros problemas habituales:
 * duplicados;
 * categorías escritas de distintas maneras.
 
-Introducir aquí una idea central:
-
 > **Mover datos no garantiza calidad de datos.**
-
-El ETL constituye también un punto de control.
 
 ---
 
@@ -249,15 +236,11 @@ trimestre    3
 anio         2026
 ```
 
-Este es un excelente ejemplo de que:
-
 > **El Data Warehouse no es una copia de la fuente.**
 
 ---
 
 # 7. Load — ¿qué cargamos primero?
-
-Presentar:
 
 ```text
 DIM_CLIENTE
@@ -267,8 +250,6 @@ DIM_TIEMPO
 FACT_VENTAS
 ```
 
-Pregunta:
-
 > ¿Podemos cargar primero `FACT_VENTAS`?
 
 Conceptualmente no deberíamos, porque los registros de hechos deben poder relacionarse con las dimensiones.
@@ -277,13 +258,9 @@ Por tanto:
 
 **primero dimensiones → después hechos.**
 
-Esto recupera exactamente la misma lógica de integridad referencial que descubrieron en S2.
-
 ---
 
 # 8. El flujo completo
-
-Ahora mostrar la arquitectura:
 
 ```text
 ┌─────────────────────┐
@@ -318,13 +295,9 @@ Ahora mostrar la arquitectura:
 └─────────────────────┘
 ```
 
-La antigua versión mostraba ETL como uno de los componentes de la arquitectura BI.  Aquí ya estamos convirtiendo esa arquitectura en algo tangible.
-
 ---
 
 # 9. ¿Qué es SSIS?
-
-Introducir solamente lo necesario.
 
 **SQL Server Integration Services (SSIS)** permite construir procesos de integración y transformación de datos.
 
@@ -346,13 +319,9 @@ Define **qué tareas se ejecutan y en qué secuencia**.
 
 Define **cómo se mueven y transforman los datos**.
 
-No dedicaría tiempo a enumerar componentes de SSIS. Los aprenderán al utilizarlos.
-
 ---
 
 # 10. Nuestro ETL
-
-Presentar desde el comienzo lo que construiremos:
 
 ```text
 CARGA DIM_CLIENTE
@@ -366,7 +335,6 @@ CARGA FACT_VENTAS
 
 Cada bloque será un `Data Flow Task`.
 
-Así los estudiantes saben qué están construyendo antes de entrar a Visual Studio.
 
 # Break
 
@@ -375,14 +343,6 @@ Así los estudiantes saben qué están construyendo antes de entrar a Visual Stu
 # Taller práctico
 
 ## 20:15–22:15
-
-Aquí haría una diferencia respecto de S6: **S8 necesita bastante demostración guiada**, porque Visual Studio/SSIS es nuevo.
-
-Pero la demostración debe ocurrir dentro de la práctica y ser operacional, no convertirse en otra exposición.
-
-La secuencia:
-
-**Profesor demuestra brevemente → estudiantes reproducen → verifican → siguiente componente.**
 
 # Etapa 1 — Preparar el entorno
 
@@ -405,14 +365,6 @@ DIM_PRODUCTO
 DIM_TIEMPO
 FACT_VENTAS
 ```
-
-Aquí no perdería tiempo haciendo que todos construyan manualmente las tablas.
-
-Podemos proporcionar un script:
-
-**`06_creacion_dw.sql`**
-
-El objetivo de S8 es ETL, no volver a practicar `CREATE TABLE`.
 
 ---
 
@@ -454,8 +406,6 @@ SELECT *
 FROM DIM_CLIENTE;
 ```
 
-Primera regla de S8:
-
 > **Un ETL no termina cuando aparece el check verde. Termina cuando validamos el destino.**
 
 ---
@@ -463,8 +413,6 @@ Primera regla de S8:
 # Etapa 3 — DIM_PRODUCTO
 
 ### 15 minutos
-
-Ahora los estudiantes reproducen con menor acompañamiento:
 
 ```text
 PRODUCTOS
@@ -481,8 +429,6 @@ id_producto
 nombre_producto
 categoria
 ```
-
-Aplicar alguna transformación sencilla de texto si los datos lo permiten.
 
 Validar:
 
@@ -520,16 +466,6 @@ mes
 nombre_mes
 trimestre
 anio
-```
-
-Aquí pueden observar de forma concreta cómo **una columna operacional se transforma en varios atributos analíticos**.
-
-Validar posteriormente:
-
-```sql
-SELECT *
-FROM DIM_TIEMPO
-ORDER BY fecha;
 ```
 
 ---
@@ -572,8 +508,6 @@ Destino:
 FACT_VENTAS
 ```
 
-Este es el momento en que todas las piezas empiezan a conectarse.
-
 ---
 
 # Etapa 6 — Ejecutar el proceso completo
@@ -605,10 +539,6 @@ Observar:
       ↓
 ✓ FACT_VENTAS
 ```
-
-Pero nuevamente:
-
-**check verde ≠ datos correctos.**
 
 ---
 
@@ -656,33 +586,13 @@ Pregunta:
 
 > **¿Los resultados deberían coincidir?**
 
-Sí, para el conjunto de datos que cargamos.
-
-Esta validación es pedagógicamente muy valiosa porque introduce un principio profesional:
-
 > **No validamos únicamente filas. También validamos métricas.**
 
 # Desafío final
 
 ### 15 minutos
 
-Introducir deliberadamente un problema de calidad en la fuente.
-
-Por ejemplo:
-
-```text
-Tecnología
-tecnologia
-TECNOLOGÍA
-```
-
-Solicitar:
-
 > Modifique el flujo para que el Data Warehouse almacene una única representación consistente de la categoría.
-
-Luego ejecutar nuevamente y verificar.
-
-El estudiante debe demostrar que entiende la **T de ETL**, no solamente cómo conectar un origen con un destino.
 
 # Producto de la sesión
 
@@ -713,50 +623,6 @@ con:
 * comprobación de dimensiones;
 * comprobación de hechos;
 * comparación de ingresos origen/destino.
-
-Así el producto no es simplemente:
-
-> "Hice un ETL."
-
-Tenemos evidencia de que **funciona y preserva la información relevante**.
-
-# Una consideración importante: carga incremental
-
-El programa habla de fundamentos de Data Warehouse, por lo que introduciría el concepto de **carga incremental**, pero no desarrollaría un ETL incremental completo.
-
-Después de ejecutar el flujo podemos preguntar:
-
-> Mañana aparecen 10 ventas nuevas. ¿Debemos volver a cargar cinco años completos de información?
-
-No sería eficiente.
-
-Conceptualmente:
-
-```text
-CARGA COMPLETA
-Todos los registros
-```
-
-frente a:
-
-```text
-CARGA INCREMENTAL
-Solo registros nuevos
-o modificados
-```
-
-Esto basta para que comprendan que los procesos ETL reales no necesariamente reconstruyen todo el DW cada vez.
-
-No profundizaría aquí en:
-
-* CDC;
-* Slowly Changing Dimensions;
-* orchestration;
-* scheduling;
-* logging avanzado;
-* manejo complejo de errores.
-
-Eso invadiría contenidos propios del módulo posterior de **Data Pipeline y Automatización**.
 
 # Cierre
 
@@ -789,8 +655,6 @@ En S2 escribíamos datos directamente en una base.
 
 En S8 estamos **moviendo, transformando y validando datos entre sistemas con propósitos diferentes**.
 
-Eso ya es una aproximación mucho más directa al trabajo de **ingeniería de datos**.
-
 ## Puente hacia S9
 
 ```text
@@ -805,4 +669,3 @@ DIM_TIEMPO ─── FACT_VENTAS ─── DIM_PRODUCTO
 Podríamos.
 
 Pero existe otra forma de proporcionar una estructura orientada específicamente al análisis multidimensional.
-
