@@ -7,7 +7,6 @@
 **Duración:** 3 horas<br>
 **Modalidad:** Online sincrónica<br>
 **Entorno práctico:** Herramienta de diagramación / modelamiento<br>
-**RAA dominante:** RAA1<br>
 
 ## Objetivo de aprendizaje
 
