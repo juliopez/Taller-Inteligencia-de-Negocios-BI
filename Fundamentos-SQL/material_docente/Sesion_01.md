@@ -183,6 +183,8 @@ Una venta puede contener varios productos y un producto puede aparecer en muchas
 
 **¿Cómo representamos una relación N:M en una base de datos relacional?**
 
+<img src="../image/IMG_01.png" width="800">
+
 ---
 
 # Break
