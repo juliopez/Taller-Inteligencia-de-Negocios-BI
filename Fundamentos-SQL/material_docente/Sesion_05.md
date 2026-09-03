@@ -74,7 +74,6 @@ Necesitamos **resumir los datos**.
 
 # 2. Funciones de agregación
 
-Introducir las cinco funciones fundamentales.
 
 | Función   | Pregunta que permite responder |
 | --------- | ------------------------------ |
@@ -83,8 +82,6 @@ Introducir las cinco funciones fundamentales.
 | `AVG()`   | ¿Cuál es el promedio?          |
 | `MIN()`   | ¿Cuál es el menor?             |
 | `MAX()`   | ¿Cuál es el mayor?             |
-
-La antigua S3 ya las introducía con ejemplos académicos de estudiantes, notas y créditos.  Ahora las contextualizamos completamente en nuestro modelo comercial.
 
 ---
 
@@ -108,19 +105,7 @@ SELECT COUNT(*) AS total_ventas
 FROM ventas;
 ```
 
-Introducir el concepto de **alias de columna** como parte habitual de los indicadores.
-
-No queremos:
-
-```text
-COUNT(*)
-```
-
-Queremos:
-
-```text
-TOTAL_VENTAS
-```
+El concepto de **alias de columna** como parte habitual de los indicadores.
 
 ---
 
@@ -152,10 +137,6 @@ SELECT SUM(cantidad * precio_unitario) AS ingresos_totales
 FROM detalle_ventas;
 ```
 
-Aquí aparece algo importante: **el indicador no necesariamente existe almacenado como una columna**.
-
-Puede construirse a partir de los datos.
-
 ---
 
 # 5. AVG, MIN y MAX
@@ -169,8 +150,6 @@ FROM productos;
 
 Esta única consulta permite introducir simultáneamente tres medidas descriptivas.
 
-Pero enfatizar:
-
 > Una agregación debe responder una pregunta que tenga sentido.
 
 SQL puede calcular muchas cosas; eso no significa que todas tengan valor analítico.
@@ -178,8 +157,6 @@ SQL puede calcular muchas cosas; eso no significa que todas tengan valor analít
 ---
 
 # 6. GROUP BY
-
-Ahora viene el salto conceptual central de S5.
 
 Sabemos calcular:
 
@@ -228,8 +205,6 @@ INNER JOIN productos p
 GROUP BY p.nombre;
 ```
 
-Este es el momento en que **S4 y S5 se integran**.
-
 ---
 
 # 7. GROUP BY + ORDER BY
@@ -248,27 +223,9 @@ GROUP BY p.nombre
 ORDER BY ingresos DESC;
 ```
 
-Aquí podemos mostrar la transformación completa:
-
-```text
-DETALLE_VENTAS
-      ↓
-JOIN PRODUCTOS
-      ↓
-GROUP BY producto
-      ↓
-SUM(ingresos)
-      ↓
-ORDER BY ingresos DESC
-      ↓
-Ranking de productos
-```
-
 ---
 
 # 8. WHERE vs HAVING
-
-Incorporaría `HAVING` en esta sesión. Es la ubicación pedagógica correcta.
 
 Tenemos:
 
@@ -302,8 +259,6 @@ Diferencia esencial:
 | `WHERE`  | registros antes de agrupar |
 | `HAVING` | grupos después de agregar  |
 
-No profundizaría más de eso durante los 45 minutos.
-
 # Break
 
 ## 20:00–20:15
@@ -311,8 +266,6 @@ No profundizaría más de eso durante los 45 minutos.
 # Taller práctico
 
 ## 20:15–22:15
-
-Aquí los ejercicios deben avanzar desde **cálculos simples hasta indicadores construidos desde múltiples tablas**.
 
 ## Nivel 1 — Agregaciones básicas
 
@@ -325,8 +278,6 @@ Construir consultas para determinar:
 3. cantidad total de ventas;
 4. precio promedio de los productos;
 5. precio mínimo y máximo registrado.
-
-Aquí todavía no necesitan `GROUP BY`.
 
 ---
 
@@ -342,21 +293,9 @@ Determinar la cantidad total de unidades vendidas.
 
 Determinar los ingresos totales generados.
 
-Para este último deberán utilizar:
-
-```text
-cantidad × precio_unitario
-```
-
 ### Ejercicio 3
 
 Determinar el precio unitario promedio de los productos vendidos.
-
-Aquí debemos comenzar a preguntar:
-
-> ¿Qué significa exactamente este promedio?
-
-Porque **calcular no es todavía interpretar**.
 
 ---
 
@@ -364,22 +303,9 @@ Porque **calcular no es todavía interpretar**.
 
 ### 20 minutos
 
-Construir:
-
 ### Ejercicio 4
 
 Cantidad de ventas realizadas por cliente.
-
-Inicialmente puede aparecer:
-
-| id_cliente | total_ventas |
-| ---------: | -----------: |
-
-Luego solicitar:
-
-> Reemplace `id_cliente` por el nombre del cliente.
-
-Ahora deberán incorporar JOIN.
 
 ### Ejercicio 5
 
@@ -411,52 +337,18 @@ Resultado:
 
 Construir un ranking de clientes según el monto total comprado.
 
-Aquí deberán recorrer:
-
-```text
-CLIENTES
-   ↓
-VENTAS
-   ↓
-DETALLE_VENTAS
-```
-
-y utilizar:
-
-```text
-JOIN
-+
-SUM
-+
-GROUP BY
-+
-ORDER BY
-```
-
-Este ejercicio ya integra S4 y S5.
-
 ---
 
 # Nivel 5 — Indicadores por categoría
 
 ### 20 minutos
 
-Solicitar un reporte que muestre:
+Generar un reporte que muestre:
 
 * categoría;
 * unidades vendidas;
 * ingresos generados;
 * precio promedio de venta.
-
-El estudiante deberá identificar que necesita:
-
-```text
-PRODUCTOS
-      +
-DETALLE_VENTAS
-```
-
-y construir múltiples agregaciones en una sola consulta.
 
 Resultado conceptual:
 
@@ -475,27 +367,11 @@ A partir del reporte anterior:
 
 > Mostrar solamente las categorías cuyos ingresos superen un determinado monto.
 
-El objetivo es que comprendan por qué:
-
-```sql
-WHERE SUM(...)
-```
-
-no es la solución correcta.
-
-Necesitan:
-
-```sql
-HAVING SUM(...)
-```
-
 ---
 
-# Desafío autónomo
+# Desafío
 
 ### 15 minutos
-
-Aquí dejaría de indicar comandos.
 
 > **La gerencia comercial solicita identificar los cinco productos que generan mayores ingresos. El reporte debe mostrar el nombre del producto, su categoría, la cantidad total de unidades vendidas y los ingresos generados, ordenados desde el producto con mayor ingreso.**
 
@@ -506,12 +382,6 @@ El estudiante debe determinar:
 * agregaciones;
 * agrupamientos;
 * ordenamiento.
-
-No decir:
-
-> "Utilice JOIN, SUM y GROUP BY."
-
-Porque queremos comenzar a evaluar la selección de herramientas, no solamente la sintaxis.
 
 # Producto de la sesión
 
@@ -532,15 +402,6 @@ HAVING
 ORDER BY
 JOIN + agregaciones
 ```
-
-Además, propondría que al final del script incorporen como comentarios la interpretación de **dos indicadores**:
-
-```sql
--- Interpretación:
--- El producto X presenta los mayores ingresos...
-```
-
-Esto empieza a moverlos desde **"ejecutar SQL" hacia "analizar información"**.
 
 # Cierre
 
