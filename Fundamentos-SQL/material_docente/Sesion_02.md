@@ -2,12 +2,12 @@
 
 # Del modelo relacional a la base de datos
 
-**Asignatura:** Fundamentos de Ingeniería de Datos y SQL
-**Programa:** Diplomado en Ingeniería de Datos con Python
-**Duración:** 3 horas
-**Modalidad:** Online sincrónica
-**Entorno práctico:** Oracle APEX
-**RAA dominante:** RAA1 / transición hacia RAA2
+**Asignatura:** Fundamentos de Ingeniería de Datos y SQL<br>
+**Programa:** Diplomado en Ingeniería de Datos con Python<br>
+**Duración:** 3 horas<br>
+**Modalidad:** Online sincrónica<br>
+**Entorno práctico:** Oracle APEX<br>
+**RAA dominante:** RAA1 / transición hacia RAA2<br>
 
 ## Objetivo de aprendizaje
 
