@@ -87,8 +87,6 @@ Consiste en:
 
 # 2. Una estrategia para resolver requerimientos
 
-Proponer una metodología sencilla que podamos reutilizar durante toda la sesión.
-
 ### Paso 1 — ¿Qué necesito mostrar?
 
 Identificar las columnas del resultado.
@@ -133,13 +131,9 @@ REQUERIMIENTO
 CONSULTA SQL
 ```
 
-Este puede convertirse en uno de los marcos metodológicos centrales del curso.
-
 ---
 
 # 3. Filtros avanzados
-
-La antigua S4 introducía `LIKE`, `BETWEEN`, `IN` e `IS NULL`.  Los recuperamos aquí porque ahora los estudiantes ya comprenden `WHERE` y pueden utilizarlos como herramientas dentro de problemas más amplios.
 
 ### LIKE
 
@@ -177,8 +171,6 @@ WHERE categoria IN ('Tecnología', 'Accesorios');
 
 ### IS NULL
 
-Recuperar el patrón aprendido con `LEFT JOIN`:
-
 ```sql
 SELECT c.nombre
 FROM clientes c
@@ -192,13 +184,6 @@ Aquí `IS NULL` permite detectar **ausencia de una relación**.
 ---
 
 # 4. Combinar condiciones
-
-Introducir brevemente:
-
-```sql
-AND
-OR
-```
 
 Ejemplo:
 
@@ -218,13 +203,9 @@ WHERE categoria = 'Tecnología'
    OR stock < 5;
 ```
 
-Advertir que las condiciones deben construirse cuidadosamente porque cambian el conjunto de resultados.
-
 ---
 
 # 5. El problema del "promedio"
-
-Ahora introducir la principal novedad conceptual de S6.
 
 Ya sabemos:
 
@@ -260,7 +241,7 @@ WHERE precio > (
 );
 ```
 
-Explicar la lógica:
+La lógica:
 
 Primero:
 
@@ -285,8 +266,6 @@ La idea importante es:
 
 > **Una subconsulta permite utilizar el resultado de una consulta dentro de otra.**
 
-No profundizar todavía en subconsultas correlacionadas, `EXISTS`, CTE ni funciones de ventana. Sería innecesario para el RAA y las 27 horas disponibles.
-
 ---
 
 # 7. Otro ejemplo: comportamiento sobre el promedio
@@ -306,13 +285,9 @@ WHERE cantidad > (
 );
 ```
 
-La estructura conceptual es la misma.
-
 ---
 
 # 8. Construcción progresiva
-
-Recuperar una de las mejores ideas de la antigua S4: construir consultas complejas progresivamente. 
 
 Supongamos el requerimiento:
 
@@ -369,8 +344,6 @@ Regla:
 
 # 9. Optimización: una primera aproximación
 
-El programa oficial menciona optimización básica, por lo que S6 es el lugar apropiado para introducirla, pero sin convertirla en administración de bases de datos.
-
 Comparar:
 
 ```sql
@@ -386,14 +359,12 @@ FROM productos
 WHERE categoria = 'Tecnología';
 ```
 
-Introducir cuatro buenas prácticas iniciales:
+Buenas prácticas iniciales:
 
 * seleccionar solamente las columnas necesarias;
 * filtrar cuando corresponda;
 * evitar JOIN innecesarios;
 * construir y validar progresivamente.
-
-Y recuperar el principio:
 
 > Una consulta correcta no solamente debe ejecutarse; debe responder correctamente el requerimiento.
 
@@ -404,18 +375,6 @@ Y recuperar el principio:
 # Taller práctico
 
 ## 20:15–22:15
-
-Esta práctica debe diferenciarse claramente de las anteriores.
-
-En S3–S5 todavía indicábamos frecuentemente:
-
-> "Utilice JOIN."
-
-> "Utilice GROUP BY."
-
-En S6 **dejamos de hacerlo**.
-
-Entregamos requerimientos.
 
 ## Nivel 1 — Filtros aplicados
 
@@ -436,8 +395,6 @@ Mostrar:
 
 Identificar clientes cuyo nombre comience con una determinada letra.
 
-No indicar `IN`, `BETWEEN` ni `LIKE`.
-
 ---
 
 # Nivel 2 — Ausencia de información
@@ -448,23 +405,9 @@ No indicar `IN`, `BETWEEN` ni `LIKE`.
 
 > El área comercial desea identificar clientes registrados que nunca hayan realizado una compra.
 
-El estudiante debe reconocer:
-
-```text
-CLIENTES
-+
-VENTAS
-+
-LEFT JOIN
-+
-IS NULL
-```
-
 ### Requerimiento 4
 
 Identificar productos que nunca han sido vendidos.
-
-Aquí cambia la relación que debe analizar.
 
 ---
 
@@ -486,8 +429,6 @@ Mostrar:
 
 Identificar productos cuyo precio sea inferior al promedio.
 
-El objetivo es consolidar la subconsulta.
-
 ---
 
 # Nivel 4 — Requerimientos analíticos
@@ -498,25 +439,7 @@ El objetivo es consolidar la subconsulta.
 
 > La gerencia desea conocer qué clientes han generado mayores ingresos para la empresa.
 
-Mostrar:
-
-* cliente;
-* cantidad de compras;
-* ingresos generados.
-
 Ordenar desde el cliente con mayor ingreso.
-
-El estudiante deberá determinar que necesita:
-
-```text
-CLIENTES
-   ↓
-VENTAS
-   ↓
-DETALLE_VENTAS
-```
-
-y combinar los conceptos de S4 y S5.
 
 ---
 
@@ -538,8 +461,6 @@ Construir un reporte que permita comparar:
 
 Ordenar las categorías según ingresos.
 
-Aquí no entregar absolutamente ninguna pista SQL.
-
 ---
 
 # Nivel 6 — Consulta con criterio analítico
@@ -550,43 +471,13 @@ Aquí no entregar absolutamente ninguna pista SQL.
 
 > La gerencia está interesada exclusivamente en las categorías que generan ingresos superiores al promedio de ingresos de las categorías.
 
-Este es deliberadamente más complejo.
-
-No necesariamente esperaría que todos lo resuelvan inmediatamente.
-
-Podemos utilizarlo como ejercicio avanzado para estudiantes que progresen más rápido y posteriormente analizar colectivamente la estrategia de solución.
-
 ---
 
 # Desafío final
 
 ### 15 minutos
 
-Entregar un requerimiento abierto:
-
 > **El gerente comercial solicita identificar los cinco productos que presentan mejor desempeño comercial. Diseñe una consulta SQL que permita responder el requerimiento y justifique qué criterio utilizó para definir "mejor desempeño".**
-
-Aquí aparece algo nuevo.
-
-No existe necesariamente una única respuesta.
-
-Un estudiante podría utilizar:
-
-```text
-unidades vendidas
-```
-
-Otro:
-
-```text
-ingresos
-```
-
-Otro podría combinar ambos criterios.
-
-Lo importante será que pueda **justificar su decisión utilizando los datos disponibles**.
-
-Esto acerca mucho más el ejercicio al trabajo profesional.
 
 # Producto de la sesión
 
@@ -602,16 +493,6 @@ Por ejemplo:
 -- Criterio utilizado:
 -- Se considera desempeño comercial según los ingresos
 -- totales generados por cada producto.
-```
-
-Así completamos una secuencia acumulativa:
-
-```text
-01_modelo_comercial.sql
-02_crud_comercial.sql
-03_consultas_join.sql
-04_indicadores_comerciales.sql
-05_consultas_aplicadas.sql
 ```
 
 # Cierre
@@ -675,6 +556,3 @@ La **Sesión 7** comenzará precisamente investigando por qué una base operacio
 * conservar información histórica;
 * ejecutar grandes volúmenes de consultas analíticas;
 * analizar el negocio desde distintas dimensiones.
-
-Y desde ese problema introduciremos **Data Warehouse, hechos, dimensiones, granularidad y modelo estrella**.
-
