@@ -35,8 +35,6 @@ El énfasis estará en comprender SQL como un lenguaje para interactuar con dato
 
 ### 1. Ya tenemos datos. ¿Qué hacemos con ellos?
 
-Partir directamente desde lo construido en S2:
-
 ```text
 CLIENTES
 PRODUCTOS
@@ -51,11 +49,8 @@ Ahora podemos comenzar a hacer preguntas:
 > ¿Qué ventas fueron realizadas recientemente?
 > ¿Cómo modificamos el precio de un producto?
 
-Esto introduce SQL desde una necesidad, no desde su definición.
-
 ### 2. SQL y CRUD
 
-Presentar las cuatro operaciones fundamentales:
 
 | Operación  | SQL      |
 | ---------- | -------- |
@@ -72,8 +67,6 @@ En CRUD, **Create** significa crear un nuevo **registro** mediante `INSERT`. `CR
 
 ### 3. SELECT
 
-Comenzar con:
-
 ```sql
 SELECT *
 FROM productos;
@@ -85,10 +78,6 @@ Luego:
 SELECT nombre, precio, stock
 FROM productos;
 ```
-
-Introducir inmediatamente una buena práctica:
-
-**consultar solamente las columnas que necesitamos.**
 
 Pregunta:
 
@@ -115,7 +104,6 @@ Operadores iniciales:
 | `>=`     | Mayor o igual |
 | `<=`     | Menor o igual |
 
-Agregar dos operadores muy útiles:
 
 ```sql
 WHERE precio BETWEEN 5000 AND 20000
@@ -124,8 +112,6 @@ WHERE precio BETWEEN 5000 AND 20000
 ```sql
 WHERE categoria = 'Tecnología'
 ```
-
-No ampliaría todavía a una batería enorme de operadores. La prioridad es que comprendan la lógica del filtro.
 
 ### 5. ORDER BY
 
@@ -177,23 +163,17 @@ FROM productos
 WHERE id_producto = 6;
 ```
 
-Aquí reforzaría una práctica que utilizaremos durante todo el curso:
-
-**Ejecutar → verificar.**
-
 ### 7. UPDATE
-
-```sql
-UPDATE productos
-SET precio = 119990
-WHERE id_producto = 6;
-```
-
-Pero antes:
 
 ```sql
 SELECT *
 FROM productos
+WHERE id_producto = 6;
+```
+
+```sql
+UPDATE productos
+SET precio = 119990
 WHERE id_producto = 6;
 ```
 
@@ -220,13 +200,9 @@ Nuevamente:
 
 **SELECT → DELETE → SELECT**
 
-Mostrar entonces deliberadamente:
-
 ```sql
 DELETE FROM productos;
 ```
-
-y preguntar:
 
 > ¿Qué registro eliminaría?
 
@@ -239,8 +215,6 @@ UPDATE productos
 SET precio = 1000;
 ```
 
-Este punto merece algunos minutos porque constituye una práctica profesional esencial.
-
 # Break
 
 ## 20:00–20:15
@@ -248,12 +222,6 @@ Este punto merece algunos minutos porque constituye una práctica profesional es
 # Taller práctico — Gestión comercial
 
 ## 20:15–22:15
-
-Aquí mantendría la filosofía de dificultad progresiva:
-
-**Muestra → Guiado → Autónomo → Desafío.**
-
-No necesitamos 14 ejercicios como en la antigua S3.  Prefiero menos ejercicios, pero con progresión clara.
 
 ## Nivel 1 — Exploración
 
@@ -306,10 +274,6 @@ de los productos cuyo stock sea inferior a 20, ordenados desde el menor stock al
 
 Mostrar los productos pertenecientes a una categoría determinada, ordenados por precio descendente.
 
-Aquí ya no entregamos la estructura SQL.
-
-Entregamos el **requerimiento**.
-
 ## Nivel 3 — INSERT
 
 ### 20 minutos
@@ -321,8 +285,6 @@ Registrar:
 * una nueva venta.
 
 Después de cada operación deberán comprobar mediante `SELECT` que el registro existe.
-
-Aquí aparecerá nuevamente la integridad referencial de S2:
 
 > ¿Podemos crear una venta para un cliente inexistente?
 
@@ -338,8 +300,6 @@ Modificar el precio de uno de los productos incorporados.
 
 Aumentar su stock.
 
-Obligatoriamente deberán ejecutar:
-
 ```text
 SELECT antes
       ↓
@@ -347,8 +307,6 @@ UPDATE
       ↓
 SELECT después
 ```
-
-No basta con que el comando "no dé error".
 
 ## Nivel 5 — DELETE
 
@@ -363,41 +321,19 @@ Pero antes deberán:
 3. ejecutar `DELETE`;
 4. volver a ejecutar `SELECT`.
 
-Esto convierte la verificación en hábito.
-
 ## Nivel 6 — ¿Por qué no puedo eliminarlo?
 
 ### 15 minutos
-
-Esta parte me parece especialmente valiosa.
-
-Pedir que intenten eliminar un cliente que ya tenga una venta asociada.
-
-Oracle debería impedirlo debido a la FK.
 
 Pregunta:
 
 > ¿Por qué podemos eliminar algunos registros y otros no?
 
-Así conectamos:
-
-**S1: relación → S2: FOREIGN KEY → S3: consecuencia operacional.**
-
-## Desafío autónomo
+## Desafío
 
 ### 10 minutos
 
-Presentar solamente el requerimiento:
-
 > La empresa detectó que un producto presenta poco stock. Identifíquelo mediante SQL, actualice su stock incorporando 10 unidades adicionales y compruebe que la operación fue realizada correctamente.
-
-No indicar:
-
-* qué consulta ejecutar;
-* qué instrucción utilizar;
-* en qué orden.
-
-El estudiante debe construir la solución.
 
 # Producto de la sesión
 
@@ -416,16 +352,9 @@ UPDATE
 DELETE
 ```
 
-El script de S2 construye la base.
-
-El script de S3 trabaja sobre ella.
-
-Esto comienza a generar además un pequeño **portafolio SQL incremental**.
-
 # Cierre
 
 ## 22:15–22:30
-
 
 **1. SQL permite consultar y modificar datos.**
 
