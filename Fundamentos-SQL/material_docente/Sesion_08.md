@@ -335,6 +335,22 @@ CARGA FACT_VENTAS
 
 Cada bloque será un `Data Flow Task`.
 
+# 🎥 Videos de apoyo — Implementación del proceso ETL con SSIS
+
+Los siguientes videos complementan el trabajo práctico de esta sesión y pueden utilizarse como guía durante la implementación del proceso ETL.
+
+| Video | Contenido | Enlace |
+|:---:|---|:---:|
+| 1️⃣ | ETL Básico en SSIS | Visual Studio Data Tools (Paso a Paso) | [▶️ Ver video](https://youtu.be/IcPZkuTDWuE) |
+| 2️⃣ | ETL Intermedio en SSIS: Transformación de Datos con Columnas Derivadas | [▶️ Ver video](https://youtu.be/aC-Aa-9fOXA) |
+| 3️⃣ | Carga Incremental en SSIS | ETL con Visual Studio Data Tools | [▶️ Ver video](https://youtu.be/gNtDZkjeoas) |
+
+> [!TIP]
+> Mantenga estos videos disponibles durante el taller. Puede utilizarlos como guía para repetir los procedimientos realizados durante la demostración.
+
+> [!IMPORTANT]
+> El objetivo no es únicamente reproducir los pasos mostrados en los videos.  
+> Al finalizar el trabajo debe ser capaz de reconocer qué operaciones corresponden a **Extract**, **Transform** y **Load**, y comprender cómo estas permiten poblar el modelo dimensional.
 
 # Break
 
