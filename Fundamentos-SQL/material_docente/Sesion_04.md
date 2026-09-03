@@ -2,11 +2,11 @@
 
 # JOIN y consultas multitabla
 
-**Asignatura:** Fundamentos de Ingeniería de Datos y SQL
-**Duración:** 3 horas
-**Modalidad:** Online sincrónica
-**Entorno práctico:** Oracle APEX
-**RAA dominante:** RAA2
+**Asignatura:** Fundamentos de Ingeniería de Datos y SQL<br>
+**Duración:** 3 horas<br>
+**Modalidad:** Online sincrónica<br>
+**Entorno práctico:** Oracle APEX<br>
+**RAA dominante:** RAA2<br>
 
 ## Objetivo de aprendizaje
 
