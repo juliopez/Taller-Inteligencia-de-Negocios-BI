@@ -6,7 +6,6 @@
 **Duración:** 3 horas<br>
 **Modalidad:** Online sincrónica<br>
 **Entorno práctico:** Oracle APEX<br>
-**RAA dominante:** RAA2<br>
 
 ## Objetivo de aprendizaje
 
