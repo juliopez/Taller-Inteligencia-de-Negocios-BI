@@ -37,8 +37,6 @@ A partir del modelo comercial, se utilizarán `INNER JOIN`, `LEFT JOIN`, alias y
 
 ### 1. El problema: los datos están separados
 
-Retomar el cierre de S3.
-
 ```sql
 SELECT *
 FROM ventas;
@@ -97,8 +95,6 @@ Por tanto, el modelamiento realizado en S1 comienza ahora a tener una consecuenc
 ---
 
 # 3. INNER JOIN
-
-Introducir la estructura:
 
 ```sql
 SELECT columnas
@@ -183,12 +179,6 @@ Pregunta:
 
 > ¿Por qué una misma venta puede aparecer varias veces?
 
-Esta pregunta es pedagógicamente importante.
-
-Porque una venta puede contener **varios productos**.
-
-Por tanto, JOIN no "duplica incorrectamente" la venta. Está mostrando la granularidad de `DETALLE_VENTAS`.
-
 ---
 
 # 6. JOIN entre múltiples tablas
@@ -226,9 +216,7 @@ INNER JOIN productos p
     ON dv.id_producto = p.id_producto;
 ```
 
-Aquí aparece por primera vez claramente el verdadero potencial del modelo relacional.
-
-A partir de cuatro tablas independientes reconstruimos una visión comprensible:
+**A partir de cuatro tablas independientes reconstruimos una visión comprensible:**
 
 | Cliente   | Venta | Producto | Cantidad | Precio |
 | --------- | ----: | -------- | -------: | -----: |
@@ -238,8 +226,6 @@ A partir de cuatro tablas independientes reconstruimos una visión comprensible:
 ---
 
 # 7. Construir JOIN progresivamente
-
-Introducir una regla práctica:
 
 **No construir inmediatamente una consulta de cuatro tablas.**
 
@@ -277,8 +263,6 @@ Esto permite detectar mucho más fácilmente:
 ---
 
 # 8. INNER JOIN vs LEFT JOIN
-
-Ahora plantear:
 
 > Queremos saber qué clientes han realizado compras.
 
@@ -325,10 +309,6 @@ Esto nos permitirá posteriormente detectar información faltante.
 
 ## 20:15–22:15
 
-Mantendría nuestra progresión:
-
-**Guiado → Semiguiado → Autónomo → Requerimiento de negocio.**
-
 ## Nivel 1 — Comprender la relación
 
 ### 20 minutos
@@ -358,8 +338,6 @@ Modificar la consulta anterior utilizando alias:
 c → CLIENTES
 v → VENTAS
 ```
-
-El objetivo aquí no es dificultad sino consolidar la sintaxis.
 
 ---
 
@@ -415,26 +393,11 @@ Construir una consulta que muestre:
 * cantidad;
 * precio unitario.
 
-No indicar las tablas.
-
-El estudiante debe descubrir que necesita:
-
-```text
-CLIENTES
-VENTAS
-DETALLE_VENTAS
-PRODUCTOS
-```
-
-Este debería ser uno de los ejercicios centrales de S4.
-
 ---
 
 # Nivel 4 — LEFT JOIN
 
 ### 20 minutos
-
-Para que el ejercicio funcione, necesitamos asegurarnos de que exista al menos un cliente sin ventas.
 
 ### Ejercicio 6
 
@@ -462,15 +425,11 @@ Visualizar:
 * id_detalle;
 * cantidad.
 
-Aquí el estudiante debe decidir qué tabla colocar a la izquierda.
-
 ---
 
 # Nivel 5 — Detectar ausencia de relaciones
 
 ### 15 minutos
-
-Ahora reutilizamos `IS NULL`, que aparecía en la antigua S4. 
 
 ### Ejercicio 8
 
@@ -484,28 +443,13 @@ LEFT JOIN
 IS NULL
 ```
 
-No entregar la consulta.
-
-Este es un uso mucho más significativo de `IS NULL` que simplemente buscar una columna vacía.
-
 ---
 
-# Nivel 6 — Desafío autónomo
+# Nivel 6 — Desafío
 
 ### 20 minutos
 
-Presentar un requerimiento real:
-
 > **El área comercial necesita un reporte que permita revisar todas las líneas de venta registradas. Para cada registro debe visualizarse el cliente, número de venta, fecha, producto, categoría, cantidad y precio unitario.**
-
-No entregar:
-
-* tablas;
-* JOIN necesarios;
-* claves;
-* orden de construcción.
-
-El estudiante deberá analizar el modelo y construir la consulta.
 
 El resultado debería conceptualmente aproximarse a:
 
@@ -519,8 +463,6 @@ Aquí ya estamos dejando de preguntar:
 y comenzamos a preguntar:
 
 > "La organización necesita esta información. **Obténgala.**"
-
-Ese cambio es importante para preparar S6 y el proyecto final.
 
 # Producto de la sesión
 
