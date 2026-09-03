@@ -2,12 +2,12 @@
 
 # De los datos al modelo relacional
 
-**Asignatura:** Fundamentos de Ingeniería de Datos y SQL
-**Programa:** Diplomado en Ingeniería de Datos con Python
-**Duración:** 3 horas
-**Modalidad:** Online sincrónica
-**Entorno práctico:** Herramienta de diagramación / modelamiento
-**RAA dominante:** RAA1
+**Asignatura:** Fundamentos de Ingeniería de Datos y SQL <br>
+**Programa:** Diplomado en Ingeniería de Datos con Python<br>
+**Duración:** 3 horas<br>
+**Modalidad:** Online sincrónica<br>
+**Entorno práctico:** Herramienta de diagramación / modelamiento<br>
+**RAA dominante:** RAA1<br>
 
 ## Objetivo de aprendizaje
 
