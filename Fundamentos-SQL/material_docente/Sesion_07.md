@@ -1,12 +1,9 @@
-# Sesión 7
-
 # Del modelo relacional al Data Warehouse
 
-**Asignatura:** Fundamentos de Ingeniería de Datos y SQL
-**Duración:** 3 horas
-**Modalidad:** Online sincrónica
-**Entorno práctico:** Oracle APEX + herramienta de diagramación
-**RAA dominante:** RAA3
+**Asignatura:** Fundamentos de Ingeniería de Datos y SQL<br>
+**Duración:** 3 horas<br>
+**Modalidad:** Online sincrónica<br>
+**Entorno práctico:** Oracle APEX + herramienta de diagramación<br>
 
 ## Objetivo de aprendizaje
 
@@ -38,8 +35,6 @@ El foco no estará en memorizar definiciones, sino en comprender **por qué una 
 ## 19:15–20:00
 
 ## 1. Nuestro modelo funciona
-
-Comenzar recuperando el sistema construido:
 
 ```text
 CLIENTES
@@ -133,8 +128,6 @@ Ventas
 
 # 3. OLTP y Data Warehouse
 
-Introducir una comparación simple.
-
 | Base operacional                 | Data Warehouse           |
 | -------------------------------- | ------------------------ |
 | Orientada a transacciones        | Orientado al análisis    |
@@ -149,8 +142,6 @@ Una precisión importante:
 > **Un Data Warehouse no reemplaza necesariamente la base operacional.**
 
 Ambos cumplen funciones distintas.
-
-La antigua sesión ya establecía esta diferencia al contrastar preguntas como "¿cuál es la nota de este estudiante?" frente a "¿cómo ha evolucionado el rendimiento durante los últimos cinco años?".  Ahora utilizamos esa misma lógica sobre nuestro caso comercial.
 
 ---
 
@@ -169,12 +160,7 @@ PRODUCTOS
 
 ### Modelo dimensional
 
-```text
-                DIM_TIEMPO
-                    │
-                    │
-DIM_CLIENTE ─── FACT_VENTAS ─── DIM_PRODUCTO
-```
+<img src="../image/IMG_02.png" width="800">
 
 Esta imagen conceptual debe ser uno de los momentos centrales de la sesión.
 
@@ -185,8 +171,6 @@ Estamos **reorganizando los datos según las preguntas que queremos responder**.
 ---
 
 # 5. ¿Qué es un hecho?
-
-Preguntar:
 
 > ¿Qué evento del negocio queremos analizar?
 
@@ -220,8 +204,6 @@ Introducir entonces:
 
 # 6. ¿Qué es una medida?
 
-Preguntar:
-
 > ¿Qué podemos medir sobre las ventas?
 
 Por ejemplo:
@@ -245,15 +227,9 @@ SUM(cantidad)
 AVG(importe)
 ```
 
-Conectar directamente con S5.
-
-Lo que antes eran agregaciones SQL ahora comienza a formar parte del **diseño analítico**.
-
 ---
 
 # 7. ¿Qué es una dimensión?
-
-Ahora:
 
 > ¿Desde qué perspectivas queremos analizar las ventas?
 
@@ -286,8 +262,6 @@ Conceptualmente:
 CLIENTE ─────── VENTA ─────── PRODUCTO
 ```
 
-Introducir:
-
 > **Las dimensiones describen el contexto desde el cual analizamos los hechos.**
 
 ---
@@ -296,11 +270,9 @@ Introducir:
 
 Este concepto merece atención especial.
 
-Preguntar:
 
 > ¿Qué representa exactamente una fila de `FACT_VENTAS`?
 
-Podría ser:
 
 **una venta completa**
 
@@ -310,17 +282,7 @@ o:
 
 No es lo mismo.
 
-Para nuestro proyecto estableceremos:
-
 > **Una fila de FACT_VENTAS representa un producto incluido en una venta determinada.**
-
-Por tanto, el grano corresponde esencialmente al antiguo:
-
-```text
-DETALLE_VENTAS
-```
-
-enriquecido con las dimensiones necesarias.
 
 Esta decisión permitirá analizar:
 
@@ -331,8 +293,6 @@ Esta decisión permitirá analizar:
 * unidades;
 * ingresos.
 
-Introducir una regla:
-
 > **Antes de diseñar una tabla de hechos debemos definir su granularidad.**
 
 ---
@@ -341,13 +301,8 @@ Introducir una regla:
 
 Nuestro primer diseño:
 
-```text
-                    DIM_TIEMPO
-                         │
-                         │
-                         ▼
-DIM_CLIENTE ─────── FACT_VENTAS ─────── DIM_PRODUCTO
-```
+<img src="../image/IMG_03.png" width="800">
+
 
 ### FACT_VENTAS
 
@@ -389,13 +344,9 @@ nombre_producto
 categoria
 ```
 
-No necesitamos complicarlo todavía.
-
 ---
 
 # 10. ¿Por qué DIM_TIEMPO?
-
-Esta dimensión merece una explicación explícita porque no existía como tabla en nuestro modelo operacional.
 
 En `VENTAS` teníamos:
 
@@ -420,47 +371,11 @@ Esto permitirá posteriormente preguntas como:
 
 > ¿Cómo evolucionaron las ventas por año?
 
-Aquí los estudiantes empiezan a ver que el modelo dimensional **no es simplemente una copia de las tablas operacionales**.
-
 ---
 
 # 11. Estrella vs copo de nieve
 
-Introducir brevemente ambos conceptos porque aparecen explícitamente en el programa.
-
-### Estrella
-
-```text
-DIM_CLIENTE
-     │
-     │
-FACT_VENTAS ─── DIM_PRODUCTO
-     │
-     │
-DIM_TIEMPO
-```
-
-Dimensiones relativamente desnormalizadas.
-
-### Snowflake
-
-Podríamos separar:
-
-```text
-DIM_PRODUCTO
-      │
-DIM_CATEGORIA
-```
-
-o:
-
-```text
-DIM_CLIENTE
-      │
-DIM_CIUDAD
-```
-
-La estructura se normaliza parcialmente.
+<img src="../image/IMG_04.png" width="800">
 
 Comparación muy breve:
 
@@ -471,12 +386,6 @@ Comparación muy breve:
 | Fácil para análisis    | Mayor complejidad |
 | Dimensiones más anchas | Menor redundancia |
 
-Para nuestro proyecto:
-
-> **Utilizaremos esquema estrella.**
-
-No necesitamos convertir esta parte en una discusión arquitectónica extensa.
-
 # Break
 
 ## 20:00–20:15
@@ -485,9 +394,7 @@ No necesitamos convertir esta parte en una discusión arquitectónica extensa.
 
 ## 20:15–22:15
 
-La práctica de S7 debe ser principalmente **diseño y razonamiento**, no programación.
-
-## Etapa 1 — Cambiar la pregunta
+## Etapa 1
 
 ### 15 minutos
 
@@ -501,8 +408,6 @@ Entregar requerimientos:
 
 > Necesita analizar ventas según ciudad del cliente.
 
-Los estudiantes deberán identificar:
-
 **¿Qué queremos medir?**
 
 y:
@@ -515,25 +420,11 @@ y:
 
 ### 15 minutos
 
-Pregunta:
+Preguntas:
 
 > ¿Cuál es el proceso que estamos analizando?
 
-Respuesta esperada:
-
-```text
-VENTAS
-```
-
-Luego:
-
 > ¿Qué evento concreto registrará una fila de nuestra tabla de hechos?
-
-Aquí deben llegar a:
-
-```text
-un producto vendido dentro de una venta
-```
 
 ---
 
@@ -550,8 +441,6 @@ Resultado esperado:
 > Una línea de producto asociada a una venta, realizada por un cliente en una fecha determinada.
 
 Esta frase debe quedar escrita antes de continuar.
-
-Me parece importante convertir la granularidad en un **artefacto explícito**, no asumir que se comprende.
 
 ---
 
@@ -573,24 +462,14 @@ Propuesta:
 ```text
 cantidad
 precio_unitario
-importe
+impuesto
 ```
-
-Preguntar:
 
 > ¿`nombre_producto` es una medida?
 
-No.
-
 > ¿`categoria` es una medida?
 
-No.
-
-> ¿`importe` es una medida?
-
-Sí.
-
-Así consolidamos la diferencia **medida/dimensión**.
+> ¿`impuesto` es una medida?
 
 ---
 
@@ -599,41 +478,6 @@ Así consolidamos la diferencia **medida/dimensión**.
 ### 20 minutos
 
 Los estudiantes deberán identificar las dimensiones necesarias para responder los requerimientos.
-
-Esperamos:
-
-```text
-DIM_TIEMPO
-DIM_CLIENTE
-DIM_PRODUCTO
-```
-
-Luego determinar atributos.
-
-### DIM_TIEMPO
-
-```text
-fecha
-dia
-mes
-nombre_mes
-trimestre
-anio
-```
-
-### DIM_CLIENTE
-
-```text
-nombre
-ciudad
-```
-
-### DIM_PRODUCTO
-
-```text
-nombre_producto
-categoria
-```
 
 ---
 
@@ -658,8 +502,6 @@ Indicando:
 * medidas;
 * relaciones.
 
-El resultado debe ser un **modelo dimensional completo**, no solamente cajas con nombres.
-
 ---
 
 # Etapa 7 — Validación mediante preguntas
@@ -682,29 +524,13 @@ FACT_VENTAS + DIM_TIEMPO
 
 > ¿Podemos calcular ingresos por categoría?
 
-```text
-FACT_VENTAS + DIM_PRODUCTO
-```
-
 ### Pregunta 3
 
 > ¿Podemos calcular ingresos por ciudad?
 
-```text
-FACT_VENTAS + DIM_CLIENTE
-```
-
 ### Pregunta 4
 
 > ¿Podemos analizar categoría por mes?
-
-```text
-FACT_VENTAS
-+
-DIM_PRODUCTO
-+
-DIM_TIEMPO
-```
 
 Si el modelo no puede responder alguna pregunta requerida, debemos revisar el diseño.
 
@@ -714,63 +540,17 @@ Si el modelo no puede responder alguna pregunta requerida, debemos revisar el di
 
 ### 10 minutos
 
-Solicitar una modificación conceptual:
-
-Separar:
-
-```text
-categoria
-```
-
-desde `DIM_PRODUCTO` hacia:
-
-```text
-DIM_CATEGORIA
-```
-
-Ahora comparar ambos diseños.
-
-Preguntar:
-
 > ¿Cuál utilizarían para nuestro caso y por qué?
-
-La respuesta esperada no necesita ser absoluta.
-
-Queremos que puedan argumentar la decisión.
 
 # Desafío final
 
 ### 15 minutos
 
-Entregar un nuevo requerimiento:
-
 > **La gerencia informa que próximamente abrirá varias sucursales y necesitará comparar ventas por sucursal, ciudad y región.**
-
-Pregunta:
 
 > ¿Nuestro modelo actual puede responder completamente ese requerimiento?
 
-No.
-
-Entonces:
-
 > ¿Cómo modificarían el modelo dimensional?
-
-Esperamos que propongan algo parecido a:
-
-```text
-DIM_SUCURSAL
-```
-
-con atributos como:
-
-```text
-sucursal
-ciudad
-region
-```
-
-Esto permite comprobar si realmente comprendieron la lógica dimensional o simplemente reprodujeron el ejemplo.
 
 # Producto de la sesión
 
@@ -786,22 +566,6 @@ compuesto por:
 4. identificación de dimensiones;
 5. modelo estrella;
 6. breve justificación de las decisiones de diseño.
-
-Así nuestro portafolio comienza a cambiar:
-
-```text
-01_modelo_comercial.sql
-02_crud_comercial.sql
-03_consultas_join.sql
-04_indicadores_comerciales.sql
-05_consultas_aplicadas.sql
-
-            ↓
-
-06_modelo_dimensional
-```
-
-Ya no estamos solamente escribiendo consultas. Estamos **diseñando arquitectura de datos**.
 
 # Cierre
 
