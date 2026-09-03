@@ -555,3 +555,34 @@ La **Sesión 7** comenzará precisamente investigando por qué una base operacio
 * conservar información histórica;
 * ejecutar grandes volúmenes de consultas analíticas;
 * analizar el negocio desde distintas dimensiones.
+
+---
+
+## Preparación para la próxima sesión
+
+> [!IMPORTANT]
+> Para la próxima sesión deberán tener su **instancia AWS creada, configurada y operativa**, junto con los **software necesarios instalados**.
+
+### Material de apoyo
+
+Para completar correctamente la configuración del entorno de trabajo, revisen los siguientes videos **antes de la próxima clase**:
+
+| Paso | Actividad | Video |
+|:---:|---|:---:|
+| 1️⃣ | Acceso y preparación inicial del entorno AWS | [▶️ Ver video](https://youtu.be/_bdFuZeAa_8) |
+| 2️⃣ | Creación y configuración de la instancia | [▶️ Ver video](https://youtu.be/MTgy0p7-ZGk) |
+| 3️⃣ | Instalación y configuración del software requerido | [▶️ Ver video](https://youtu.be/GDXPwS5h7ms) |
+
+> [!WARNING]
+> La configuración del entorno **no se realizará desde cero durante la próxima sesión**.  
+> Lleguen a clases con la instancia preparada para comenzar directamente con el trabajo práctico.
+
+### Antes de la clase verifica que:
+
+- [ ] Puedes ingresar correctamente a **AWS Academy**.
+- [ ] Tu **instancia AWS** está creada.
+- [ ] Puedes iniciar y conectarte a la instancia.
+- [ ] Los software requeridos están instalados.
+- [ ] Revisaste los tres videos de preparación.
+
+---
