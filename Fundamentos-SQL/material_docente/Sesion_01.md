@@ -34,8 +34,6 @@ La jornada tendrá un enfoque predominantemente práctico. Luego de una breve ex
 | Taller práctico           | **120 min** | Diseño progresivo de un modelo relacional                        |
 | Cierre                    |  **15 min** | Revisión de soluciones, errores frecuentes y preparación para S2 |
 
-Esta estructura la mantendremos como patrón para las nueve sesiones.
-
 ---
 
 # Bloque 1 — Exposición y demostración
@@ -74,8 +72,6 @@ Presentar aquí la transformación:
 
 **Ocurrencia → Registro → Fila**
 
-Este será un punto conceptual importante de la sesión.
-
 ---
 
 # 3. Entidades y atributos
@@ -106,8 +102,6 @@ podría contener:
 * precio;
 * stock.
 
-Aquí conviene mostrar deliberadamente ejemplos correctos e incorrectos para que los estudiantes comiencen a distinguir entre **entidad, atributo y dato**.
-
 ---
 
 # 4. Claves primarias
@@ -130,8 +124,6 @@ La clave primaria:
 * identifica un registro;
 * no debe repetirse;
 * permite posteriormente establecer relaciones.
-
-Pregunta para la clase:
 
 > ¿Por qué sería problemático utilizar el nombre del cliente como clave primaria?
 
@@ -166,15 +158,11 @@ Introducir aquí la diferencia:
 
 # 6. Cardinalidad
 
-Explicar solamente las relaciones necesarias para esta etapa:
-
 **1 : 1**
 
 **1 : N**
 
 **N : M**
-
-Utilizar ejemplos de negocio.
 
 ### Cliente — Venta
 
@@ -188,8 +176,6 @@ Cada venta corresponde a un cliente.
 
 ### Venta — Producto
 
-Aquí aparece deliberadamente un problema:
-
 ```text
 VENTAS N ───── N PRODUCTOS
 ```
@@ -197,8 +183,6 @@ VENTAS N ───── N PRODUCTOS
 Una venta puede contener varios productos y un producto puede aparecer en muchas ventas.
 
 **¿Cómo representamos una relación N:M en una base de datos relacional?**
-
-Esta pregunta será el puente hacia la actividad práctica.
 
 ---
 
