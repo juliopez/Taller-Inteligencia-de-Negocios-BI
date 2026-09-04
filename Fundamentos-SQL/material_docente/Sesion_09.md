@@ -84,8 +84,6 @@ Entonces planteamos:
 
 > Business Intelligence comprende metodologías, procesos y tecnologías destinadas a transformar datos en información útil para apoyar la toma de decisiones. 
 
-Pero ahora podemos mostrar dónde se ubica:
-
 <img src="../image/IMG_06.png" width="800">
 
 ---
