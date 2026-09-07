@@ -45,8 +45,6 @@ La actividad permitirá comprobar que un modelo relacional no consiste solamente
 
 <img src="../image/IMG_01.png" width="800">
 
-```
-
 Hasta ahora tenemos una **representación del problema**.
 
 Pero todavía no existe ninguna base de datos.
