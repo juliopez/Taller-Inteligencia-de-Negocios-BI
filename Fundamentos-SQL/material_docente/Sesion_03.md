@@ -222,7 +222,21 @@ SET precio = 1000;
 
 ## 20:15–22:15
 
-## Nivel 1 — Exploración
+## Nivel 1 — INSERT
+
+### 20 minutos
+
+Registrar:
+
+* 10 nuevos cliente;
+* 05 nuevos productos;
+* 07 nuevas venta.
+
+Después de cada operación deberán comprobar mediante `SELECT` que el registro existe.
+
+> ¿Podemos crear una venta para un cliente inexistente?
+
+## Nivel 2 — Exploración
 
 ### 20 minutos
 
@@ -255,7 +269,7 @@ WHERE
 ORDER BY
 ```
 
-## Nivel 2 — Consultas combinadas
+## Nivel 3 — Consultas combinadas
 
 ### 20 minutos
 
@@ -272,20 +286,6 @@ de los productos cuyo stock sea inferior a 20, ordenados desde el menor stock al
 ### Ejercicio 6
 
 Mostrar los productos pertenecientes a una categoría determinada, ordenados por precio descendente.
-
-## Nivel 3 — INSERT
-
-### 20 minutos
-
-Registrar:
-
-* un nuevo cliente;
-* dos nuevos productos;
-* una nueva venta.
-
-Después de cada operación deberán comprobar mediante `SELECT` que el registro existe.
-
-> ¿Podemos crear una venta para un cliente inexistente?
 
 ## Nivel 4 — UPDATE
 
