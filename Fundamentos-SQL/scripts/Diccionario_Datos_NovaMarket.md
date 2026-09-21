@@ -18,21 +18,7 @@ El modelo está formado por cuatro tablas:
 
 ## 2. Relaciones del modelo
 
-``` text
-CLIENTES
-   │
-   │ 1:N
-   ▼
-VENTAS
-   │
-   │ 1:N
-   ▼
-DETALLE_VENTAS
-   ▲
-   │ N:1
-   │
-PRODUCTOS
-```
+<img src=../image/IMG_09.png >
 
 Las relaciones se implementan mediante claves foráneas:
 
@@ -49,23 +35,13 @@ muchos entre ventas y productos.
 
 Almacena la información básica de cada cliente registrado en NovaMarket.
 
-  ------------------------------------------------------------------------------
-  Campo          Tipo de dato      Nulo           Clave          Descripción
-  -------------- ----------------- -------------- -------------- ---------------
-  `id_cliente`   `NUMBER`          No             PK             Identificador
-                                                                 único del
-                                                                 cliente.
-
-  `nombre`       `VARCHAR2(100)`   No             ---            Nombre del
-                                                                 cliente.
-
-  `correo`       `VARCHAR2(150)`   Sí             ---            Dirección de
-                                                                 correo
-                                                                 electrónico del
-                                                                 cliente.
-
-  `ciudad`       `VARCHAR2(100)`   No             ---            Ciudad asociada
-                                                                 al cliente.
+  |Campo|          Tipo de dato|      Nulo|           Clave|          Descripción|
+  |--------------| ----------------- |--------------| --------------|---------------|
+  |`id_cliente`|   `NUMBER`       |   No          |   PK     |        Identificador único del cliente.|
+  |`nombre` |      `VARCHAR2(100)` |  No          |   ---    |        Nombre del cliente.|
+  |`correo`  |     `VARCHAR2(150)`  | Sí          |   ---    |        Dirección de correo electrónico del cliente.|
+  |`ciudad`  |     `VARCHAR2(100)`|   No          |   ---    |        Ciudad asociada al cliente.|
+  
   ------------------------------------------------------------------------------
 
 ### Clave primaria
@@ -80,32 +56,14 @@ PRIMARY KEY (id_cliente)
 
 Contiene el catálogo de productos comercializados por NovaMarket.
 
-  -------------------------------------------------------------------------------
-  Campo           Tipo de dato      Nulo           Clave          Descripción
-  --------------- ----------------- -------------- -------------- ---------------
-  `id_producto`   `NUMBER`          No             PK             Identificador
-                                                                  único del
-                                                                  producto.
-
-  `nombre`        `VARCHAR2(120)`   No             ---            Nombre
-                                                                  descriptivo del
-                                                                  producto.
-
-  `categoria`     `VARCHAR2(80)`    No             ---            Categoría
-                                                                  comercial a la
-                                                                  que pertenece
-                                                                  el producto.
-
-  `precio`        `NUMBER(10,2)`    No             ---            Precio actual
-                                                                  del producto.
-                                                                  Debe ser mayor
-                                                                  o igual a cero.
-
-  `stock`         `NUMBER`          No             ---            Cantidad
-                                                                  disponible
-                                                                  actualmente.
-                                                                  Debe ser mayor
-                                                                  o igual a cero.
+ |Campo|          Tipo de dato|      Nulo|           Clave|          Descripción|
+ |--------------| ----------------- |--------------| --------------|---------------|
+ | `id_producto`|   `NUMBER`       |   No       |      PK     |        Identificador único del producto.|
+ | `nombre`    |    `VARCHAR2(120)` |  No      |       ---    |        Nombre descriptivo del producto.|
+ | `categoria`   |  `VARCHAR2(80)`  |  No      |       ---   |         Categoría comercial a la que pertenece el producto.|
+ | `precio`    |    `NUMBER(10,2)`  |  No     |        ---    |        Precio actual del producto. Debe ser mayor o igual a cero.|
+ | `stock`     |    `NUMBER`       |   No     |        ---     |       Cantidad disponible actualmente. Debe ser mayor o igual a cero.|
+  
   -------------------------------------------------------------------------------
 
 ### Restricciones
@@ -126,18 +84,12 @@ CHECK (stock >= 0)
 
 Registra las transacciones comerciales realizadas por los clientes.
 
-  -------------------------------------------------------------------------------------
-  Campo           Tipo de dato   Nulo           Clave          Descripción
-  --------------- -------------- -------------- -------------- ------------------------
-  `id_venta`      `NUMBER`       No             PK             Identificador único de
-                                                               la venta.
-
-  `id_cliente`    `NUMBER`       No             FK             Cliente que realizó la
-                                                               compra. Referencia a
-                                                               `CLIENTES.id_cliente`.
-
-  `fecha_venta`   `DATE`         No             ---            Fecha en que se realizó
-                                                               la venta.
+  |Campo|          Tipo de dato|      Nulo|           Clave|          Descripción|
+ |--------------| ----------------- |--------------| --------------|---------------|
+  |`id_venta`   |   `NUMBER`    |   No       |      PK      |       Identificador único de la venta.|
+  |`id_cliente`  |  `NUMBER`   |    No      |       FK      |       Cliente que realizó la compra. Referencia a `CLIENTES.id_cliente`.|
+  |`fecha_venta` |  `DATE`      |   No       |      ---     |       Fecha en que se realizó la venta.|
+  
   -------------------------------------------------------------------------------------
 
 ### Restricciones
@@ -166,28 +118,14 @@ CLIENTES 1 ─────── N VENTAS
 Contiene las líneas o ítems que componen cada venta. Constituye el nivel
 de mayor detalle del modelo operacional.
 
-  ---------------------------------------------------------------------------------------------
-  Campo               Tipo de dato     Nulo           Clave          Descripción
-  ------------------- ---------------- -------------- -------------- --------------------------
-  `id_detalle`        `NUMBER`         No             PK             Identificador único de la
-                                                                     línea de venta.
-
-  `id_venta`          `NUMBER`         No             FK             Venta a la que pertenece
-                                                                     el registro. Referencia a
-                                                                     `VENTAS.id_venta`.
-
-  `id_producto`       `NUMBER`         No             FK             Producto incluido en la
-                                                                     venta. Referencia a
-                                                                     `PRODUCTOS.id_producto`.
-
-  `cantidad`          `NUMBER`         No             ---            Número de unidades
-                                                                     vendidas. Debe ser mayor
-                                                                     que cero.
-
-  `precio_unitario`   `NUMBER(10,2)`   No             ---            Precio unitario aplicado
-                                                                     al producto en el momento
-                                                                     de la venta. Debe ser
-                                                                     mayor o igual a cero.
+ |Campo|          Tipo de dato|      Nulo|           Clave|          Descripción|
+ |--------------| ----------------- |--------------| --------------|---------------|
+  |`id_detalle`  |      `NUMBER`   |      No   |          PK   |          Identificador único de la línea de venta.|
+  |`id_venta`   |       `NUMBER`   |      No   |          FK    |         Venta a la que pertenece el registro. Referencia a `VENTAS.id_venta`.|
+  |`id_producto` |      `NUMBER`   |      No   |          FK   |          Producto incluido en la venta. Referencia a `PRODUCTOS.id_producto`.|
+  |`cantidad`   |      `NUMBER`    |     No   |          ---   |         Número de unidades vendidas. Debe ser mayor que cero.|
+  |`precio_unitario` |  `NUMBER(10,2)` |  No |            ---  |          Precio unitario aplicado al producto en el momento de la venta. Debe ser mayor o igual a cero.|
+ 
   ---------------------------------------------------------------------------------------------
 
 ### Restricciones
@@ -221,12 +159,13 @@ participar en múltiples ventas.
 
 ## 7. Claves del modelo
 
-  Tabla              Clave primaria   Claves foráneas
-  ------------------ ---------------- ---------------------------
-  `CLIENTES`         `id_cliente`     ---
-  `PRODUCTOS`        `id_producto`    ---
-  `VENTAS`           `id_venta`       `id_cliente`
-  `DETALLE_VENTAS`   `id_detalle`     `id_venta`, `id_producto`
+  |Tabla |             Clave primaria|   Claves foráneas|
+  |------------------| ----------------| ---------------------------|
+  |`CLIENTES`|         `id_cliente`  |   ---|
+  |`PRODUCTOS`|        `id_producto` |   ---|
+  |`VENTAS` |          `id_venta`|       `id_cliente`|
+  |`DETALLE_VENTAS`|   `id_detalle` |    `id_venta`, `id_producto`|
+
 
 ------------------------------------------------------------------------
 
@@ -311,45 +250,6 @@ existan registros o restricciones activas:
 2. VENTAS
 3. PRODUCTOS
 4. CLIENTES
-```
-
-------------------------------------------------------------------------
-
-## 12. Resumen del modelo
-
-<img src=MER_NovaMarket.png >
-
-``` text
-CLIENTES
-PK id_cliente
-   nombre
-   correo
-   ciudad
-      │
-      │ 1:N
-      ▼
-VENTAS
-PK id_venta
-FK id_cliente
-   fecha_venta
-      │
-      │ 1:N
-      ▼
-DETALLE_VENTAS
-PK id_detalle
-FK id_venta
-FK id_producto
-   cantidad
-   precio_unitario
-      ▲
-      │ N:1
-      │
-PRODUCTOS
-PK id_producto
-   nombre
-   categoria
-   precio
-   stock
 ```
 
 ------------------------------------------------------------------------
