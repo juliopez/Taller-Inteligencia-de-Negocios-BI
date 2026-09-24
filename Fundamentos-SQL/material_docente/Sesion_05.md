@@ -454,7 +454,7 @@ o:
 
 Allí incorporaremos:
 
-* filtros avanzados (`LIKE`, `IN`, `BETWEEN`, `IS NULL`) que estaban en la antigua S4; 
+* filtros avanzados (`LIKE`, `IN`, `BETWEEN`, `IS NULL`); 
 * subconsultas simples;
 * combinación de JOIN + filtros + agregaciones;
 * construcción progresiva;
