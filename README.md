@@ -1,3 +1,24 @@
+# Inteligencia de Negocios e Ingeniería de Datos
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18967207.svg)](https://doi.org/10.5281/zenodo.18967207) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+**Biblioteca educativa abierta** de Business Intelligence, Ingeniería de Datos, SQL y Power BI. Reúne tres rutas de formación independientes y proyectos aplicados para el aprendizaje autónomo.
+
+📘 **[Explorar el portal educativo](https://juliopez.github.io/Taller-Inteligencia-de-Negocios-BI/)** *(la publicación requiere activar GitHub Pages desde `main` y `/docs` después de integrar el PR)*.
+
+| Ruta | Recursos |
+|---|---|
+| [Inteligencia de Negocios](sesiones/README.md) | Fundamentos, ETL, SSIS, Pentaho, Power Automate y OLAP |
+| [Ingeniería de Datos y SQL](Fundamentos-SQL/README.md) | Nueve guías, datasets, scripts y proyecto NovaMarket |
+| [Power BI aplicado](Power_BI/README.md) | Taller de dashboards y dataset simulado de productividad científica |
+| [Proyectos](proyecto/) | Proyecto EduBI Chile y orientaciones de evaluación |
+
+Los nombres cronológicos de archivos y sesiones se mantienen por compatibilidad; el portal presenta una organización temática permanente. Las instrucciones curriculares y de evaluación del curso se conservan a continuación como documentación original.
+
+---
+
+## Documentación original de la asignatura
+
 # Curso de Inteligencia de Negocios
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18967207.svg)](https://doi.org/10.5281/zenodo.18967207)
